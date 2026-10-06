@@ -1,0 +1,12 @@
+# Local runtime / editor state. Keep results and verification records versioned.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.pem
+*.key
