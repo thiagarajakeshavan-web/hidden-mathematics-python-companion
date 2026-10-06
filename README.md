@@ -4,11 +4,11 @@
 
 ## Download the complete source code
 
-[Download the complete Python companion ZIP](Hidden_Mathematics_Reader_Companion_1.0.0.zip?raw=true)
+[Download the complete Python companion ZIP](Hidden_Mathematics_Reader_Companion_1.0.0.zip)
 
 The archive contains all **315 files**, including the Python source for both volumes, chapter-by-chapter English and Tamil guides, synthetic inputs, saved results, tests, version-matching notes and a verification record. No book purchase or GitHub login is required to download this public archive.
 
-1. Open the download link above. If GitHub shows the archive page instead, select **Download raw file**.
+1. Open the archive link above, then select **Download raw file**.
 2. Extract the entire ZIP. Keep its directory structure intact.
 3. Open the extracted `Hidden_Mathematics_Reader_Companion_1.0.0` folder.
 4. Read `START_HERE_EN.md` for the English beginner guide or `START_HERE_TA.md` for the Tamil guide.
