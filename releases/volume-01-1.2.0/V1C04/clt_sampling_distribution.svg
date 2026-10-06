@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="480" viewBox="0 0 800 480" role="img" aria-label="Standardized sample means">
+<title>Standardized sample means</title><desc>5,000 independent exponential samples per size; histogram density, seed 404</desc>
+<rect width="800" height="480" fill="white"/>
+<g font-family="Arial, sans-serif" fill="#17324D">
+<text x="40" y="34" font-size="23" font-weight="bold">Standardized sample means</text>
+<text x="40" y="57" font-size="13">5,000 independent exponential samples per size; histogram density, seed 404</text>
+<line x1="90" y1="82" x2="110" y2="82" stroke="#117A8B" stroke-width="3"/>
+<text x="118" y="86" font-size="12">Sample size 5</text>
+<line x1="310" y1="82" x2="330" y2="82" stroke="#D67B12" stroke-width="3"/>
+<text x="338" y="86" font-size="12">Sample size 30</text>
+<line x1="530" y1="82" x2="550" y2="82" stroke="#6B4CA5" stroke-width="3"/>
+<text x="558" y="86" font-size="12">Sample size 100</text>
+<line x1="90" y1="382.00" x2="730" y2="382.00" stroke="#E3E8ED"/>
+<text x="78" y="386.00" text-anchor="end" font-size="11">-0.022</text>
+<text x="90.00" y="405" text-anchor="middle" font-size="11">-3.88</text>
+<line x1="90" y1="328.00" x2="730" y2="328.00" stroke="#E3E8ED"/>
+<text x="78" y="332.00" text-anchor="end" font-size="11">0.074</text>
+<text x="218.00" y="405" text-anchor="middle" font-size="11">-2.33</text>
+<line x1="90" y1="274.00" x2="730" y2="274.00" stroke="#E3E8ED"/>
+<text x="78" y="278.00" text-anchor="end" font-size="11">0.17</text>
+<text x="346.00" y="405" text-anchor="middle" font-size="11">-0.775</text>
+<line x1="90" y1="220.00" x2="730" y2="220.00" stroke="#E3E8ED"/>
+<text x="78" y="224.00" text-anchor="end" font-size="11">0.26</text>
+<text x="474.00" y="405" text-anchor="middle" font-size="11">0.775</text>
+<line x1="90" y1="166.00" x2="730" y2="166.00" stroke="#E3E8ED"/>
+<text x="78" y="170.00" text-anchor="end" font-size="11">0.36</text>
+<text x="602.00" y="405" text-anchor="middle" font-size="11">2.33</text>
+<line x1="90" y1="112.00" x2="730" y2="112.00" stroke="#E3E8ED"/>
+<text x="78" y="116.00" text-anchor="end" font-size="11">0.45</text>
+<text x="730.00" y="405" text-anchor="middle" font-size="11">3.88</text>
+<path d="M 90 112 V 382 H 730" fill="none" stroke="#17324D"/>
+<polyline points="90.00,369.73 110.65,369.73 131.29,369.73 151.94,369.73 172.58,369.73 193.23,369.73 213.87,369.73 234.52,369.73 255.16,357.93 275.81,316.19 296.45,264.92 317.10,209.57 337.74,150.59 358.39,144.69 379.03,124.27 399.68,136.52 420.32,170.10 440.97,194.14 461.61,205.49 482.26,238.15 502.90,270.37 523.55,301.22 544.19,319.37 564.84,333.43 585.48,344.32 606.13,350.22 626.77,354.75 647.42,362.92 668.06,363.83 688.71,363.83 709.35,365.64 730.00,367.46" fill="none" stroke="#117A8B" stroke-width="2.5"/>
+<polyline points="90.00,369.73 110.65,369.73 131.29,369.73 151.94,369.73 172.58,368.82 193.23,367.91 213.87,361.56 234.52,356.57 255.16,330.25 275.81,305.30 296.45,283.52 317.10,229.08 337.74,201.86 358.39,150.13 379.03,163.75 399.68,134.25 420.32,149.23 440.97,171.91 461.61,199.59 482.26,229.99 502.90,256.30 523.55,293.05 544.19,309.38 564.84,333.88 585.48,341.60 606.13,356.57 626.77,359.29 647.42,362.01 668.06,363.38 688.71,368.37 709.35,367.91 730.00,368.82" fill="none" stroke="#D67B12" stroke-width="2.5"/>
+<polyline points="90.00,369.73 110.65,369.73 131.29,369.73 151.94,369.27 172.58,368.37 193.23,363.38 213.87,358.84 234.52,348.86 255.16,326.63 275.81,314.38 296.45,278.99 317.10,256.75 337.74,201.40 358.39,171.00 379.03,154.22 399.68,136.98 420.32,144.69 440.97,163.29 461.61,178.72 482.26,231.80 502.90,267.19 523.55,284.43 544.19,312.11 564.84,332.98 585.48,344.77 606.13,352.03 626.77,357.93 647.42,365.19 668.06,363.38 688.71,367.46 709.35,369.27 730.00,369.73" fill="none" stroke="#6B4CA5" stroke-width="2.5"/>
+<text x="410" y="432" text-anchor="middle" font-size="13">sqrt(n) × (sample mean − 1)</text>
+<text x="24" y="250" text-anchor="middle" transform="rotate(-90 24 250)" font-size="13">Estimated density</text>
+<text x="40" y="465" font-size="11" fill="#586A78">Volume I companion · Keshavan Thiagaraja · Synthetic teaching experiment</text>
+</g></svg>

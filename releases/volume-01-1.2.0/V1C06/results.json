@@ -1,0 +1,102 @@
+{
+  "chapter": "V1C06",
+  "case_id": "V1C06-CASE01",
+  "synthetic": true,
+  "p": [
+    0.75,
+    0.25
+  ],
+  "q": [
+    0.6,
+    0.4
+  ],
+  "entropy_bits": 0.8112781244591328,
+  "cross_entropy_bits": 0.8832062193464952,
+  "kl_bits": 0.0719280948873624,
+  "reverse_kl_bits": 0.07807190511263751,
+  "logits": [
+    1000.0,
+    1001.0,
+    999.0
+  ],
+  "logsumexp": 1001.4076059644444,
+  "softmax": [
+    0.24472847105478585,
+    0.6652409557747898,
+    0.09003057317037612
+  ],
+  "true_class_index_zero_based": 1,
+  "true_class_loss_nats": 0.40760596444442854,
+  "logit_gradient": [
+    0.24472847105478585,
+    -0.3347590442252102,
+    0.09003057317037612
+  ],
+  "single_token_perplexity": 1.5032147244081275,
+  "mutual_information_extension": {
+    "joint_table": [
+      [
+        0.4,
+        0.1
+      ],
+      [
+        0.1,
+        0.4
+      ]
+    ],
+    "mutual_information_bits": 0.27807190511263774,
+    "seed": 606,
+    "sample_estimates": [
+      {
+        "n": 100,
+        "cell_counts": [
+          [
+            37,
+            7
+          ],
+          [
+            6,
+            50
+          ]
+        ],
+        "estimated_mi_bits": 0.4325848033836261
+      },
+      {
+        "n": 1000,
+        "cell_counts": [
+          [
+            394,
+            92
+          ],
+          [
+            114,
+            400
+          ]
+        ],
+        "estimated_mi_bits": 0.26721348646458587
+      },
+      {
+        "n": 10000,
+        "cell_counts": [
+          [
+            4014,
+            1007
+          ],
+          [
+            927,
+            4052
+          ]
+        ],
+        "estimated_mi_bits": 0.29160846487816106
+      }
+    ],
+    "xor": {
+      "I_X1_Y_bits": 0.0,
+      "I_X2_Y_bits": 0.0,
+      "I_pair_Y_bits": 1.0
+    },
+    "note": "Plug-in estimates fluctuate and are biased at small sample sizes; XOR has useful pairwise interaction despite zero univariate information."
+  },
+  "zero_support_cross_entropy_is_infinite": true,
+  "identity_residual_bits": 0.0
+}

@@ -1,0 +1,39 @@
+{
+  "recorded_date_utc": "2026-10-05",
+  "release": "1.1.0-author-review",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "packages": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "verification": {
+    "all_thirteen_chapter_labs": "passed",
+    "additive_shopsmart_cases": [
+      "V1C05-CASE02",
+      "V1C10-CASE02"
+    ],
+    "unit_tests": 120,
+    "original_tests_preserved": 55,
+    "new_classical_tests": 46,
+    "new_shopsmart_tests": 19,
+    "unit_test_result": "passed with warnings treated as errors",
+    "original_content_comparison": "36 files byte-identical to original archive",
+    "extracted_archive_full_run": "passed",
+    "individual_scripts_from_unrelated_cwd": "passed",
+    "manifest_after_rerun": "passed without source/result drift",
+    "fresh_dependency_install": "not run",
+    "Windows_execution": "not run",
+    "macOS_execution": "not run",
+    "public_code_access": "author requested public access with no purchase gate; remote publication verified separately",
+    "production_retail_voice_OCR_courier_integrations": "not implemented",
+    "live_retailer_prices": "not retrieved",
+    "reuse_license": "no new licence selected"
+  },
+  "runtime_notes": {
+    "LOKY_MAX_CPU_COUNT": "process-local default 1; user environment override respected"
+  }
+}

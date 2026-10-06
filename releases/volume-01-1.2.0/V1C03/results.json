@@ -1,0 +1,84 @@
+{
+  "chapter": "V1C03",
+  "case_id": "V1C03-CASE01",
+  "synthetic": true,
+  "bayes": {
+    "prevalence": 0.01,
+    "sensitivity": 0.9,
+    "false_positive_rate": 0.05,
+    "positive_probability": 0.0585,
+    "posterior_event_given_positive": 0.15384615384615385,
+    "constructed_counts_per_100000": {
+      "true_positive": 900,
+      "false_positive": 4950,
+      "false_negative": 100,
+      "true_negative": 94050
+    }
+  },
+  "base_rate_sweep": [
+    {
+      "prevalence": 0.001,
+      "posterior": 0.01769911504424779
+    },
+    {
+      "prevalence": 0.01,
+      "posterior": 0.15384615384615385
+    },
+    {
+      "prevalence": 0.1,
+      "posterior": 0.6666666666666667
+    }
+  ],
+  "discrete_demand": {
+    "values": [
+      0,
+      1,
+      2
+    ],
+    "probabilities": [
+      0.2,
+      0.5,
+      0.3
+    ],
+    "expectation": 1.1,
+    "second_moment": 1.7,
+    "variance": 0.49,
+    "standard_deviation": 0.7
+  },
+  "distribution_examples": {
+    "binomial_n5_p04_probability_k3": 0.23039999999999994,
+    "poisson_mean3_probability_k2": 0.22404180765538775,
+    "exponential_rate02_probability_above5": 0.36787944117144233,
+    "normal_standard_probability_between_minus2_and2": 0.9544997361036416
+  },
+  "beta_binomial_update": {
+    "prior_alpha": 2,
+    "prior_beta": 8,
+    "successes": 7,
+    "trials": 10,
+    "posterior_alpha": 9,
+    "posterior_beta": 11,
+    "posterior_mean": 0.45
+  },
+  "dependent_uncorrelated": {
+    "x": [
+      -1,
+      0,
+      1
+    ],
+    "y_equals_x_squared": [
+      1,
+      0,
+      1
+    ],
+    "covariance": 0.0,
+    "note": "Y is determined by X, despite zero covariance."
+  },
+  "monte_carlo": {
+    "seed": 303,
+    "n": 100000,
+    "positive_count": 5977,
+    "estimated_posterior": 0.15576376108415593,
+    "note": "Seeded approximation, not the exact Bayes result and not real operational evidence."
+  }
+}

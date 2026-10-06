@@ -1,0 +1,301 @@
+{
+  "chapter": "V1C08",
+  "case_id": "V1C08-CASE01",
+  "synthetic": true,
+  "labels": [
+    1,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "probabilities": [
+    0.9,
+    0.6,
+    0.8,
+    0.4,
+    0.3,
+    0.2,
+    0.1,
+    0.05
+  ],
+  "threshold_results": [
+    {
+      "threshold": 0.5,
+      "true_positive": 2,
+      "false_positive": 1,
+      "false_negative": 1,
+      "true_negative": 4,
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1": 0.6666666666666666,
+      "accuracy": 0.75,
+      "specificity": 0.8,
+      "total_cost": 12.0
+    },
+    {
+      "threshold": 0.3,
+      "true_positive": 3,
+      "false_positive": 2,
+      "false_negative": 0,
+      "true_negative": 3,
+      "precision": 0.6,
+      "recall": 1.0,
+      "f1": 0.75,
+      "accuracy": 0.75,
+      "specificity": 0.6,
+      "total_cost": 4.0
+    },
+    {
+      "threshold": 0.2,
+      "true_positive": 3,
+      "false_positive": 3,
+      "false_negative": 0,
+      "true_negative": 2,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "accuracy": 0.625,
+      "specificity": 0.4,
+      "total_cost": 6.0
+    }
+  ],
+  "edge_cases": {
+    "no_predicted_positive": {
+      "threshold": 0.5,
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 1,
+      "true_negative": 1,
+      "precision": null,
+      "recall": 0.0,
+      "f1": 0.0,
+      "accuracy": 0.5,
+      "specificity": 1.0,
+      "total_cost": 10.0
+    },
+    "no_actual_positive": {
+      "threshold": 0.5,
+      "true_positive": 0,
+      "false_positive": 0,
+      "false_negative": 0,
+      "true_negative": 2,
+      "precision": null,
+      "recall": null,
+      "f1": null,
+      "accuracy": 1.0,
+      "specificity": 1.0,
+      "total_cost": 0.0
+    },
+    "undefined_metric_representation": "JSON null; pairwise_auc raises ValueError when either true class is absent."
+  },
+  "roc_auc": 0.8,
+  "pairwise_auc_crosscheck": 0.8,
+  "average_precision": 0.7555555555555555,
+  "brier_score": 0.18906250000000002,
+  "log_loss_nats": 0.5400274801636789,
+  "roc_curve": [
+    {
+      "threshold": null,
+      "fpr": 0.0,
+      "tpr": 0.0
+    },
+    {
+      "threshold": 0.9,
+      "fpr": 0.0,
+      "tpr": 0.3333333333333333
+    },
+    {
+      "threshold": 0.8,
+      "fpr": 0.2,
+      "tpr": 0.3333333333333333
+    },
+    {
+      "threshold": 0.6,
+      "fpr": 0.2,
+      "tpr": 0.6666666666666666
+    },
+    {
+      "threshold": 0.4,
+      "fpr": 0.4,
+      "tpr": 0.6666666666666666
+    },
+    {
+      "threshold": 0.3,
+      "fpr": 0.4,
+      "tpr": 1.0
+    },
+    {
+      "threshold": 0.2,
+      "fpr": 0.6,
+      "tpr": 1.0
+    },
+    {
+      "threshold": 0.1,
+      "fpr": 0.8,
+      "tpr": 1.0
+    },
+    {
+      "threshold": 0.05,
+      "fpr": 1.0,
+      "tpr": 1.0
+    }
+  ],
+  "precision_recall_curve": [
+    {
+      "threshold": 0.05,
+      "precision": 0.375,
+      "recall": 1.0
+    },
+    {
+      "threshold": 0.1,
+      "precision": 0.42857142857142855,
+      "recall": 1.0
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.5,
+      "recall": 1.0
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.6,
+      "recall": 1.0
+    },
+    {
+      "threshold": 0.4,
+      "precision": 0.5,
+      "recall": 0.6666666666666666
+    },
+    {
+      "threshold": 0.6,
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666
+    },
+    {
+      "threshold": 0.8,
+      "precision": 0.5,
+      "recall": 0.3333333333333333
+    },
+    {
+      "threshold": 0.9,
+      "precision": 1.0,
+      "recall": 0.3333333333333333
+    },
+    {
+      "threshold": null,
+      "precision": 1.0,
+      "recall": 0.0
+    }
+  ],
+  "curve_note": "ROC null threshold is +infinity; PR final null threshold is the conventional endpoint. Average precision is not trapezoidal PR area.",
+  "calibration_bins": [
+    {
+      "lower_inclusive": 0.0,
+      "upper": 0.2,
+      "upper_inclusive": false,
+      "count": 2,
+      "mean_probability": 0.07500000000000001,
+      "observed_fraction_positive": 0.0
+    },
+    {
+      "lower_inclusive": 0.2,
+      "upper": 0.4,
+      "upper_inclusive": false,
+      "count": 2,
+      "mean_probability": 0.25,
+      "observed_fraction_positive": 0.5
+    },
+    {
+      "lower_inclusive": 0.4,
+      "upper": 0.6,
+      "upper_inclusive": false,
+      "count": 1,
+      "mean_probability": 0.4,
+      "observed_fraction_positive": 0.0
+    },
+    {
+      "lower_inclusive": 0.6,
+      "upper": 0.8,
+      "upper_inclusive": false,
+      "count": 1,
+      "mean_probability": 0.6,
+      "observed_fraction_positive": 1.0
+    },
+    {
+      "lower_inclusive": 0.8,
+      "upper": 1.0,
+      "upper_inclusive": true,
+      "count": 2,
+      "mean_probability": 0.8500000000000001,
+      "observed_fraction_positive": 0.5
+    }
+  ],
+  "calibration_caveat": "Eight examples illustrate bin arithmetic, not a trustworthy calibration estimate. Intervals are left-closed, right-open except the final bin includes 1.",
+  "calibrated_probability_cost_threshold": 0.16666666666666666,
+  "threshold_caveat": "Threshold costs on the same eight rows are retrospective teaching comparisons. Choose operational thresholds on separate validation data with appropriate prevalence, calibration and capacity checks.",
+  "imbalance_counts": {
+    "n": 10000,
+    "positive": 100,
+    "tp": 80,
+    "fn": 20,
+    "fp": 198,
+    "tn": 9702,
+    "accuracy": 0.9782,
+    "precision": 0.28776978417266186,
+    "recall": 0.8,
+    "f1": 0.42328042328042326,
+    "false_positive_rate": 0.02
+  },
+  "regression": {
+    "y": [
+      10.0,
+      20.0,
+      30.0
+    ],
+    "prediction": [
+      12.0,
+      18.0,
+      33.0
+    ],
+    "mae": 2.3333333333333335,
+    "mse": 5.666666666666667,
+    "rmse": 2.3804761428476167,
+    "r_squared": 0.915
+  },
+  "group_leakage": {
+    "seed": 808,
+    "groups": 200,
+    "rows_per_group": 5,
+    "deployment_question": "Predict labels for previously unseen entities.",
+    "data": "Random entity fingerprint plus tiny noise; random label fixed within entity.",
+    "splits": {
+      "random_row_split": {
+        "train_rows": 700,
+        "test_rows": 300,
+        "overlapping_groups": 167,
+        "test_accuracy": 1.0
+      },
+      "unseen_group_split": {
+        "train_rows": 700,
+        "test_rows": 300,
+        "overlapping_groups": 0,
+        "test_accuracy": 0.5666666666666667
+      }
+    },
+    "interpretation": "For unseen-entity deployment, shared entities in a row split let the model memorize identity. This is not evidence that group splitting is required for every possible deployment question."
+  },
+  "temporal_leakage": {
+    "seed": 809,
+    "train_end_time": 349,
+    "test_start_time": 350,
+    "rows_with_future_feature_unavailable_at_decision": 500,
+    "chronological_safe_accuracy": 0.5066666666666667,
+    "chronological_leaked_accuracy": 1.0,
+    "availability_rule": "A feature must have available_at <= decision_at for that prediction.",
+    "interpretation": "Even chronological splitting cannot repair an outcome-derived field unavailable at prediction time. The 100% score is deliberately invalid evidence."
+  }
+}

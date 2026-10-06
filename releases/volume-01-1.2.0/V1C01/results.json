@@ -1,0 +1,162 @@
+{
+  "chapter": "V1C01",
+  "case_id": "V1C01-CASE01",
+  "synthetic": true,
+  "query": [
+    3.0,
+    4.0
+  ],
+  "query_norm": 5.0,
+  "similarities": [
+    {
+      "candidate": "a",
+      "vector": [
+        4.0,
+        3.0
+      ],
+      "dot_product": 24.0,
+      "cosine": 0.96
+    },
+    {
+      "candidate": "b",
+      "vector": [
+        -3.0,
+        -4.0
+      ],
+      "dot_product": -25.0,
+      "cosine": -1.0
+    },
+    {
+      "candidate": "c",
+      "vector": [
+        4.0,
+        -3.0
+      ],
+      "dot_product": 0.0,
+      "cosine": 0.0
+    }
+  ],
+  "zero_vector_policy": "Raise ValueError; no fabricated cosine score.",
+  "linear_system": {
+    "A": [
+      [
+        2.0,
+        1.0
+      ],
+      [
+        1.0,
+        2.0
+      ]
+    ],
+    "b": [
+      8.0,
+      7.0
+    ],
+    "solution": [
+      3.0,
+      2.0
+    ],
+    "residual_norm": 0.0,
+    "eigenvalues": [
+      1.0,
+      3.0
+    ],
+    "eigen_equation_max_error": 0.0
+  },
+  "singular_matrix_rank": 1,
+  "batch_cosines": [
+    0.96,
+    -1.0,
+    0.0
+  ],
+  "pca_input": [
+    [
+      2.0,
+      1.0
+    ],
+    [
+      2.0,
+      -1.0
+    ],
+    [
+      -2.0,
+      1.0
+    ],
+    [
+      -2.0,
+      -1.0
+    ]
+  ],
+  "pca": {
+    "means": [
+      0.0,
+      0.0
+    ],
+    "centered": [
+      [
+        2.0,
+        1.0
+      ],
+      [
+        2.0,
+        -1.0
+      ],
+      [
+        -2.0,
+        1.0
+      ],
+      [
+        -2.0,
+        -1.0
+      ]
+    ],
+    "covariance": [
+      [
+        5.333333333333333,
+        0.0
+      ],
+      [
+        0.0,
+        1.3333333333333333
+      ]
+    ],
+    "eigenvalues_descending": [
+      5.333333333333333,
+      1.3333333333333333
+    ],
+    "singular_values": [
+      4.0,
+      2.0
+    ],
+    "explained_variance_ratio": [
+      0.8,
+      0.2
+    ],
+    "rank_one_reconstruction": [
+      [
+        2.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        -2.0,
+        0.0
+      ],
+      [
+        -2.0,
+        0.0
+      ]
+    ],
+    "rank_one_squared_error": 4.0,
+    "svd_reconstruction_max_error": 2.220446049250313e-16,
+    "covariance_reconstruction_max_error": 0.0
+  },
+  "tensor_example_shape": [
+    2,
+    3,
+    4
+  ]
+}

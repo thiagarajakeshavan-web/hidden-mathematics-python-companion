@@ -1,0 +1,51 @@
+{
+  "case_id": "V1C04-CASE02",
+  "data_status": "Ten constructed Bernoulli trials with seven successes.",
+  "beta_2_2_prior": {
+    "successes": 7,
+    "trials": 10,
+    "prior_alpha": 2,
+    "prior_beta": 2,
+    "posterior_alpha": 9,
+    "posterior_beta": 5,
+    "mle": {
+      "numerator": 7,
+      "denominator": 10,
+      "decimal": 0.7
+    },
+    "map": {
+      "numerator": 2,
+      "denominator": 3,
+      "decimal": 0.6666666666666666
+    },
+    "posterior_mean": {
+      "numerator": 9,
+      "denominator": 14,
+      "decimal": 0.6428571428571429
+    }
+  },
+  "uniform_beta_1_1_prior": {
+    "successes": 7,
+    "trials": 10,
+    "prior_alpha": 1,
+    "prior_beta": 1,
+    "posterior_alpha": 8,
+    "posterior_beta": 4,
+    "mle": {
+      "numerator": 7,
+      "denominator": 10,
+      "decimal": 0.7
+    },
+    "map": {
+      "numerator": 7,
+      "denominator": 10,
+      "decimal": 0.7
+    },
+    "posterior_mean": {
+      "numerator": 2,
+      "denominator": 3,
+      "decimal": 0.6666666666666666
+    }
+  },
+  "scope": "MLE maximises likelihood; MAP maximises posterior density under the stated parameterisation. The posterior mean is a third distinct estimate. An interior Beta(a,b) mode uses (a-1)/(a+b-2) only if a>1 and b>1. Prior choice is illustrative, not evidence of better predictive performance."
+}

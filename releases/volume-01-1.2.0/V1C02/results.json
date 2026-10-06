@@ -1,0 +1,83 @@
+{
+  "chapter": "V1C02",
+  "case_id": "V1C02-CASE01",
+  "synthetic": true,
+  "scalar": {
+    "w": 1.0,
+    "f_w": 1.0,
+    "analytic_derivative": -4.0,
+    "central_difference": -4.000000000004
+  },
+  "parameter_order": [
+    "w",
+    "b",
+    "v",
+    "c"
+  ],
+  "initial_parameters": [
+    0.5,
+    0.5,
+    2.0,
+    0.0
+  ],
+  "network_initial": {
+    "z": 1.5,
+    "h": 1.5,
+    "prediction": 3.0,
+    "loss": 0.5,
+    "gradient": [
+      -4.0,
+      -2.0,
+      -1.5,
+      -1.0
+    ]
+  },
+  "central_difference_gradient": [
+    -4.000000000001225,
+    -2.0000000000131024,
+    -1.500000000032031,
+    -1.0000000000065512
+  ],
+  "maximum_gradient_error": 3.203104448346039e-11,
+  "simultaneous_updates": [
+    {
+      "learning_rate": 0.01,
+      "parameters": [
+        0.54,
+        0.52,
+        2.015,
+        0.01
+      ],
+      "z": 1.6,
+      "h": 1.6,
+      "prediction": 3.234,
+      "loss": 0.293378,
+      "gradient": [
+        -3.08698,
+        -1.54349,
+        -1.2256,
+        -0.766
+      ]
+    },
+    {
+      "learning_rate": 0.1,
+      "parameters": [
+        0.9,
+        0.7,
+        2.15,
+        0.1
+      ],
+      "z": 2.5,
+      "h": 2.5,
+      "prediction": 5.475,
+      "loss": 1.0878124999999994,
+      "gradient": [
+        6.3424999999999985,
+        3.1712499999999992,
+        3.687499999999999,
+        1.4749999999999996
+      ]
+    }
+  ],
+  "warning": "A correct negative gradient is local; a large step can increase loss. Finite differences at a ReLU kink do not verify differentiability."
+}

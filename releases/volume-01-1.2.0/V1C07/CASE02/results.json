@@ -1,0 +1,55 @@
+{
+  "case_id": "V1C07-CASE02",
+  "domain": [
+    "a",
+    "b"
+  ],
+  "observed": {
+    "a": 0
+  },
+  "unseen_point": "b",
+  "consistent_targets": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "target_probabilities": [
+    {
+      "numerator": 1,
+      "denominator": 2,
+      "decimal": 0.5
+    },
+    {
+      "numerator": 1,
+      "denominator": 2,
+      "decimal": 0.5
+    }
+  ],
+  "always_predict_zero_mean_unseen_error": {
+    "numerator": 1,
+    "denominator": 2,
+    "decimal": 0.5
+  },
+  "always_predict_one_mean_unseen_error": {
+    "numerator": 1,
+    "denominator": 2,
+    "decimal": 0.5
+  },
+  "randomized_predict_one_probability": {
+    "numerator": 1,
+    "denominator": 4,
+    "decimal": 0.25
+  },
+  "randomized_mean_unseen_error": {
+    "numerator": 1,
+    "denominator": 2,
+    "decimal": 0.5
+  },
+  "assumptions": "Fixed observed subset, uniform weighting over all binary target functions consistent with the observation, unseen-point 0-1 loss, no restriction favouring a particular target pattern.",
+  "scope": "A finite symmetry illustration. Real datasets are not generally uniform over all target functions, and useful inductive biases can perform differently on structured tasks. This does not say every practical learner is equally good or that learning is pointless."
+}

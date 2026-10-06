@@ -1,0 +1,155 @@
+{
+  "chapter": "V1C07",
+  "case_id": "V1C07-CASE01",
+  "synthetic": true,
+  "scalar_penalties": [
+    {
+      "z": 3.0,
+      "lambda": 1.0,
+      "l1_solution": 2.0,
+      "l2_solution": 1.5,
+      "objectives": "L1: (w-z)^2/2+lambda*abs(w); L2: (w-z)^2/2+lambda*w^2/2"
+    },
+    {
+      "z": 0.6,
+      "lambda": 1.0,
+      "l1_solution": 0.0,
+      "l2_solution": 0.3,
+      "objectives": "L1: (w-z)^2/2+lambda*abs(w); L2: (w-z)^2/2+lambda*w^2/2"
+    }
+  ],
+  "exact_unbiased": {
+    "predictions": [
+      8,
+      10,
+      12
+    ],
+    "truth": 10.0,
+    "noise_values": [
+      -2.0,
+      2.0
+    ],
+    "bias_squared": 0.0,
+    "variance": 2.6666666666666665,
+    "noise_variance": 4.0,
+    "expected_squared_error": 6.666666666666667,
+    "sum_of_components": 6.666666666666666
+  },
+  "exact_biased": {
+    "predictions": [
+      8,
+      8,
+      8
+    ],
+    "truth": 10.0,
+    "noise_values": [
+      -2.0,
+      2.0
+    ],
+    "bias_squared": 4.0,
+    "variance": 0.0,
+    "noise_variance": 4.0,
+    "expected_squared_error": 8.0,
+    "sum_of_components": 8.0
+  },
+  "hoeffding": {
+    "n": 1000,
+    "delta": 0.05,
+    "single_fixed_hypothesis_epsilon": 0.04294694083467376,
+    "100_hypotheses_uniform_epsilon": 0.06439739761862287,
+    "required_n_M100_epsilon_005": 1659,
+    "assumptions": "Independent identically distributed examples; loss in [0,1]; finite hypothesis family fixed independently of the evaluation sample."
+  },
+  "regularization": {
+    "seed": 707,
+    "data": "y=x^2+Normal(0,0.25^2), x~Uniform(-1,1)",
+    "split_sizes": {
+      "train": 25,
+      "validation": 200,
+      "test": 1000
+    },
+    "validation_scores": [
+      {
+        "alpha": 0.0,
+        "validation_mse": 0.18436092718037078
+      },
+      {
+        "alpha": 1e-06,
+        "validation_mse": 0.16368608832019013
+      },
+      {
+        "alpha": 0.0001,
+        "validation_mse": 0.11646322828458087
+      },
+      {
+        "alpha": 0.01,
+        "validation_mse": 0.10525858312955912
+      },
+      {
+        "alpha": 1.0,
+        "validation_mse": 0.0865919194158888
+      },
+      {
+        "alpha": 100.0,
+        "validation_mse": 0.11375999740321302
+      }
+    ],
+    "selected_alpha": 1.0,
+    "comparisons": {
+      "degree_1_baseline": {
+        "train_mse": 0.10312932460811335,
+        "test_mse": 0.1477702112262999
+      },
+      "degree_2_baseline": {
+        "train_mse": 0.054536435638618014,
+        "test_mse": 0.06855978680301274
+      },
+      "degree_12_unregularized": {
+        "train_mse": 0.031812688121197176,
+        "test_mse": 0.11738423837239403
+      },
+      "degree_12_validation_selected": {
+        "train_mse": 0.04896421565506911,
+        "test_mse": 0.07126938067187945
+      }
+    },
+    "test_policy": "Select alpha on validation only; inspect test once for final illustrative comparisons."
+  },
+  "repeated_fits": {
+    "seed": 708,
+    "repetitions": 150,
+    "grid_points": 101,
+    "noise_variance": 0.0625,
+    "note": "Finite-ensemble estimates, not population guarantees. Ridge alpha fixed before this experiment.",
+    "models": {
+      "degree_1": {
+        "bias_squared": 0.07602653418168652,
+        "variance": 0.013956997381968678,
+        "error_to_noiseless_truth": 0.08998353156365518,
+        "expected_error_with_independent_noise": 0.15248353156365518,
+        "decomposition_residual": -1.3877787807814457e-17
+      },
+      "degree_2": {
+        "bias_squared": 7.076879351469113e-05,
+        "variance": 0.008114317988033448,
+        "error_to_noiseless_truth": 0.00818508678154814,
+        "expected_error_with_independent_noise": 0.07068508678154814,
+        "decomposition_residual": 1.734723475976807e-18
+      },
+      "degree_12": {
+        "bias_squared": 61342.91044873107,
+        "variance": 8794533.905271025,
+        "error_to_noiseless_truth": 8855876.815719748,
+        "expected_error_with_independent_noise": 8855876.878219757,
+        "decomposition_residual": -9.313225746154785e-09
+      },
+      "degree_12_ridge": {
+        "bias_squared": 0.0005901780045614707,
+        "variance": 0.02627057591780542,
+        "error_to_noiseless_truth": 0.026860753922366885,
+        "expected_error_with_independent_noise": 0.08936075392236689,
+        "decomposition_residual": -3.469446951953614e-18
+      }
+    }
+  }
+}
