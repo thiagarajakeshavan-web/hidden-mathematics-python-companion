@@ -1,0 +1,22 @@
+{
+  "data_status": "All future states and promotions are fictional teaching assumptions, not retailer announcements or fitted model outputs.",
+  "need_by_day": 3,
+  "waiting_cost_per_day_cents": 150,
+  "scenario_probability_status": "Assumed joint outcome probabilities, not estimated or calibrated probabilities.",
+  "promotions": [
+    {"promotion_id": "FICT-PROMO-01", "item_id": "G28", "store": "Coles", "price_cents": 700, "valid_from_day": 2, "valid_to_day": 3, "evidence_status": "CONFIRMED_WITHIN_FICTION_ONLY", "source": "Author-created teaching fixture; no external retailer source"},
+    {"promotion_id": "FICT-PROMO-02", "item_id": "G29", "store": "Woolworths", "price_cents": 150, "valid_from_day": 2, "valid_to_day": 3, "evidence_status": "CONFIRMED_WITHIN_FICTION_ONLY", "source": "Author-created teaching fixture; no external retailer source"}
+  ],
+  "future_days": [
+    {"day": 2, "states": [
+      {"name": "downside", "probability_basis_points": 2000, "nonpromotion_pack_delta_cents": 20, "stock_overrides": [{"item_id": "G14", "store": "ALDI", "stock_packs": 0}]},
+      {"name": "central", "probability_basis_points": 6000, "nonpromotion_pack_delta_cents": 0, "stock_overrides": [{"item_id": "G14", "store": "ALDI", "stock_packs": 0}]},
+      {"name": "upside", "probability_basis_points": 2000, "nonpromotion_pack_delta_cents": -20, "stock_overrides": [{"item_id": "G14", "store": "ALDI", "stock_packs": 0}]}
+    ]},
+    {"day": 3, "states": [
+      {"name": "downside", "probability_basis_points": 2000, "nonpromotion_pack_delta_cents": 40, "stock_overrides": [{"item_id": "G18", "store": "Woolworths", "stock_packs": 0}]},
+      {"name": "central", "probability_basis_points": 5000, "nonpromotion_pack_delta_cents": -20, "stock_overrides": []},
+      {"name": "upside", "probability_basis_points": 3000, "nonpromotion_pack_delta_cents": -40, "stock_overrides": []}
+    ]}
+  ]
+}

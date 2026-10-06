@@ -1,0 +1,892 @@
+{
+  "case_id": "V1C05-CASE04",
+  "data_status": "Fictional ingredient products, prices, pack sizes, stock and label/cross-contact assessments. No real product is cleared as allergy-safe.",
+  "meal": "Lentil, tomato and spinach stew with rice, broccoli and carrots",
+  "servings": 5,
+  "strict_budget_cents": 4000,
+  "currency": "AUD",
+  "supplier": "Fictional single-store kit supplier; not a real retailer quote",
+  "fees": {
+    "delivery_cents": 500,
+    "handling_cents": 100,
+    "other_mandatory_cents": 0
+  },
+  "minimum_order_cents": 0,
+  "membership_required": false,
+  "kitchen_cross_contact_reviewed_in_fixture": true,
+  "pantry_assumptions": [
+    "Drinking water only. Every food ingredient used, including oil and spices, is priced as a whole purchasable pack. Salt is not required or included.",
+    "Cooking equipment, household energy and water charges are not grocery checkout items and are outside this shopping budget."
+  ],
+  "profiles": {
+    "peanut_only": {
+      "vegan_required": true,
+      "excluded_allergens": [
+        "peanut"
+      ]
+    },
+    "peanut_and_named_tree_nuts": {
+      "vegan_required": true,
+      "excluded_allergens": [
+        "peanut",
+        "almond",
+        "Brazil nut",
+        "cashew",
+        "hazelnut",
+        "macadamia",
+        "pecan",
+        "pistachio",
+        "pine nut",
+        "walnut"
+      ]
+    }
+  },
+  "items": [
+    {
+      "item_id": "D01",
+      "ingredient": "Rice, dry",
+      "unit": "g",
+      "recipe_quantity": 350,
+      "pack_quantity": 1000,
+      "price_per_pack_cents": 250,
+      "stock_packs": 3,
+      "vegan_status": "ACCEPTABLE_IN_FIXTURE",
+      "ingredient_evidence_current": true,
+      "allergen_evidence": {
+        "peanut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "almond": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "Brazil nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "cashew": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "hazelnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "macadamia": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pecan": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pistachio": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pine nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "walnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        }
+      }
+    },
+    {
+      "item_id": "D02",
+      "ingredient": "Lentils, dry",
+      "unit": "g",
+      "recipe_quantity": 500,
+      "pack_quantity": 500,
+      "price_per_pack_cents": 240,
+      "stock_packs": 3,
+      "vegan_status": "ACCEPTABLE_IN_FIXTURE",
+      "ingredient_evidence_current": true,
+      "allergen_evidence": {
+        "peanut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "almond": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "Brazil nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "cashew": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "hazelnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "macadamia": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pecan": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pistachio": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pine nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "walnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        }
+      }
+    },
+    {
+      "item_id": "D03",
+      "ingredient": "Canned chopped tomatoes",
+      "unit": "g",
+      "recipe_quantity": 800,
+      "pack_quantity": 400,
+      "price_per_pack_cents": 100,
+      "stock_packs": 3,
+      "vegan_status": "ACCEPTABLE_IN_FIXTURE",
+      "ingredient_evidence_current": true,
+      "allergen_evidence": {
+        "peanut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "almond": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "Brazil nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "cashew": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "hazelnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "macadamia": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pecan": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pistachio": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pine nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "walnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        }
+      }
+    },
+    {
+      "item_id": "D04",
+      "ingredient": "Onions",
+      "unit": "g",
+      "recipe_quantity": 300,
+      "pack_quantity": 1000,
+      "price_per_pack_cents": 250,
+      "stock_packs": 3,
+      "vegan_status": "ACCEPTABLE_IN_FIXTURE",
+      "ingredient_evidence_current": true,
+      "allergen_evidence": {
+        "peanut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "almond": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "Brazil nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "cashew": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "hazelnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "macadamia": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pecan": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pistachio": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pine nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "walnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        }
+      }
+    },
+    {
+      "item_id": "D05",
+      "ingredient": "Carrots",
+      "unit": "g",
+      "recipe_quantity": 400,
+      "pack_quantity": 1000,
+      "price_per_pack_cents": 200,
+      "stock_packs": 3,
+      "vegan_status": "ACCEPTABLE_IN_FIXTURE",
+      "ingredient_evidence_current": true,
+      "allergen_evidence": {
+        "peanut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "almond": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "Brazil nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "cashew": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "hazelnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "macadamia": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pecan": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pistachio": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pine nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "walnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        }
+      }
+    },
+    {
+      "item_id": "D06",
+      "ingredient": "Spinach",
+      "unit": "g",
+      "recipe_quantity": 250,
+      "pack_quantity": 250,
+      "price_per_pack_cents": 200,
+      "stock_packs": 3,
+      "vegan_status": "ACCEPTABLE_IN_FIXTURE",
+      "ingredient_evidence_current": true,
+      "allergen_evidence": {
+        "peanut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "almond": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "Brazil nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "cashew": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "hazelnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "macadamia": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pecan": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pistachio": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pine nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "walnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        }
+      }
+    },
+    {
+      "item_id": "D07",
+      "ingredient": "Broccoli",
+      "unit": "g",
+      "recipe_quantity": 500,
+      "pack_quantity": 500,
+      "price_per_pack_cents": 250,
+      "stock_packs": 3,
+      "vegan_status": "ACCEPTABLE_IN_FIXTURE",
+      "ingredient_evidence_current": true,
+      "allergen_evidence": {
+        "peanut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "almond": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "Brazil nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "cashew": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "hazelnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "macadamia": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pecan": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pistachio": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pine nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "walnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        }
+      }
+    },
+    {
+      "item_id": "D08",
+      "ingredient": "Garlic",
+      "unit": "g",
+      "recipe_quantity": 20,
+      "pack_quantity": 100,
+      "price_per_pack_cents": 100,
+      "stock_packs": 3,
+      "vegan_status": "ACCEPTABLE_IN_FIXTURE",
+      "ingredient_evidence_current": true,
+      "allergen_evidence": {
+        "peanut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "almond": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "Brazil nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "cashew": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "hazelnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "macadamia": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pecan": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pistachio": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pine nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "walnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        }
+      }
+    },
+    {
+      "item_id": "D09",
+      "ingredient": "Lemon",
+      "unit": "count",
+      "recipe_quantity": 1,
+      "pack_quantity": 3,
+      "price_per_pack_cents": 150,
+      "stock_packs": 3,
+      "vegan_status": "ACCEPTABLE_IN_FIXTURE",
+      "ingredient_evidence_current": true,
+      "allergen_evidence": {
+        "peanut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "almond": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "Brazil nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "cashew": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "hazelnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "macadamia": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pecan": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pistachio": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pine nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "walnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        }
+      }
+    },
+    {
+      "item_id": "D10",
+      "ingredient": "Cooking oil",
+      "unit": "ml",
+      "recipe_quantity": 30,
+      "pack_quantity": 500,
+      "price_per_pack_cents": 300,
+      "stock_packs": 3,
+      "vegan_status": "ACCEPTABLE_IN_FIXTURE",
+      "ingredient_evidence_current": true,
+      "allergen_evidence": {
+        "peanut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "almond": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "Brazil nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "cashew": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "hazelnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "macadamia": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pecan": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pistachio": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pine nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "walnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        }
+      }
+    },
+    {
+      "item_id": "D11",
+      "ingredient": "Ground cumin",
+      "unit": "g",
+      "recipe_quantity": 6,
+      "pack_quantity": 35,
+      "price_per_pack_cents": 180,
+      "stock_packs": 3,
+      "vegan_status": "ACCEPTABLE_IN_FIXTURE",
+      "ingredient_evidence_current": true,
+      "allergen_evidence": {
+        "peanut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "almond": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "Brazil nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "cashew": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "hazelnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "macadamia": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pecan": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pistachio": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pine nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "walnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        }
+      }
+    },
+    {
+      "item_id": "D12",
+      "ingredient": "Paprika",
+      "unit": "g",
+      "recipe_quantity": 6,
+      "pack_quantity": 35,
+      "price_per_pack_cents": 180,
+      "stock_packs": 3,
+      "vegan_status": "ACCEPTABLE_IN_FIXTURE",
+      "ingredient_evidence_current": true,
+      "allergen_evidence": {
+        "peanut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "almond": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "Brazil nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "cashew": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "hazelnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "macadamia": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pecan": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pistachio": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pine nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "walnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        }
+      }
+    },
+    {
+      "item_id": "D13",
+      "ingredient": "Black pepper",
+      "unit": "g",
+      "recipe_quantity": 2,
+      "pack_quantity": 40,
+      "price_per_pack_cents": 180,
+      "stock_packs": 3,
+      "vegan_status": "ACCEPTABLE_IN_FIXTURE",
+      "ingredient_evidence_current": true,
+      "allergen_evidence": {
+        "peanut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "almond": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "Brazil nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "cashew": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "hazelnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "macadamia": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pecan": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pistachio": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "pine nut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        },
+        "walnut": {
+          "ingredient_status": "ABSENT_IN_FIXTURE",
+          "cross_contact_status": "REVIEWED_ACCEPTABLE_IN_FIXTURE",
+          "label_current": true
+        }
+      }
+    }
+  ],
+  "recipe_steps": [
+    "Rinse the lentils and cook in unsalted water according to their pack directions until tender, then drain. Record their actual cooked, drained mass if using the nutrition demonstration. The fixture assumes 1000 g; this is an illustrative measurement, not a validated dry-to-cooked yield.",
+    "Cook 350 g dry rice in water according to the pack directions.",
+    "Peel and chop 300 g onions, 400 g carrots and 20 g garlic. Wash the broccoli and spinach.",
+    "Use 20 ml of the measured oil to soften the onions and carrots in a large pan. Add garlic, 6 g cumin, 6 g paprika and 2 g black pepper; stir briefly.",
+    "Add both 400 g cans of tomatoes and enough water for a stew. Simmer until the carrots are tender. Stir in the cooked lentils and 250 g spinach and heat through.",
+    "Steam the 500 g broccoli until cooked as preferred. Dress with the remaining 10 ml oil and juice from one lemon.",
+    "Divide the rice, lentil stew and broccoli into five portions. The five portions define the teaching calculation; appetites and nutrition needs vary."
+  ],
+  "nutrition_scope": "Only the separately weighed cooked lentil contribution is quantified. Whole-meal nutrient totals and adequacy are not established.",
+  "nutrition_input": {
+    "source_food_key": "F005177",
+    "source_food_form": "Lentil, dried, boiled, drained; boiled in unsalted water then drained",
+    "source_url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F005177",
+    "source_name": "FSANZ Australian Food Composition Database",
+    "checked_date": "2026-10-05",
+    "source_derivation": "Recipe-derived reference values, not an assay of this fictional meal",
+    "assumed_measured_cooked_drained_mass_g": "1000",
+    "dry_pack_purchase_g": 500,
+    "yield_status": "Assumed cooked measurement; do not infer a guaranteed yield from the dry pack",
+    "per_100g": {
+      "protein_g": "7.3",
+      "dietary_fibre_g": "4.1",
+      "iron_mg": "1.63",
+      "folate_ug": "14"
+    }
+  }
+}

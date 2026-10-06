@@ -1,0 +1,16 @@
+V1C01: wrote V1C01/results.json
+V1C02: wrote V1C02/results.json
+V1C03: wrote V1C03/results.json
+V1C04: wrote V1C04/results.json
+V1C05: wrote V1C05/results.json
+V1C06: wrote V1C06/results.json
+V1C07: wrote V1C07/results.json
+V1C08: wrote V1C08/results.json
+V1C09: wrote V1C09/results.json
+V1C10: wrote V1C10/results.json
+V1C11: wrote V1C11/results.json
+V1C12: wrote V1C12/results.json
+V1C13: wrote V1C13/results.json
+V1C05-CASE02: wrote shopsmart_examples/basket_results.json
+V1C10-CASE02: wrote shopsmart_examples/forecast_results.json
+Wrote three SVG charts in V1C04 and V1C05.

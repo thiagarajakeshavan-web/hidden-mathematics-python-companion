@@ -1,0 +1,23 @@
+test_access_filter_before_vector_read (__main__.IndependentChecks.test_access_filter_before_vector_read) ... ok
+test_agent_permission_and_budget_boundaries (__main__.IndependentChecks.test_agent_permission_and_budget_boundaries) ... ok
+test_as_of_future_conflict_does_not_rewrite_history (__main__.IndependentChecks.test_as_of_future_conflict_does_not_rewrite_history) ... ok
+test_attention_oracle_and_causal_prefix (__main__.IndependentChecks.test_attention_oracle_and_causal_prefix) ... ok
+test_attention_unmasked_permutation_equivariance (__main__.IndependentChecks.test_attention_unmasked_permutation_equivariance) ... ok
+test_backprop_against_independent_scalar_loss (__main__.IndependentChecks.test_backprop_against_independent_scalar_loss) ... ok
+test_calibration_exact_fractions (__main__.IndependentChecks.test_calibration_exact_fractions) ... ok
+test_cosine_scaling_invariance_extreme_finite (__main__.IndependentChecks.test_cosine_scaling_invariance_extreme_finite) ... ok
+test_cross_correlation_explicit_reversal (__main__.IndependentChecks.test_cross_correlation_explicit_reversal) ... ok
+test_distillation_gradient_with_independent_objective (__main__.IndependentChecks.test_distillation_gradient_with_independent_objective) ... ok
+test_dpo_closed_form_and_reference_reversal (__main__.IndependentChecks.test_dpo_closed_form_and_reference_reversal) ... ok
+test_extreme_valid_dpo_probabilities (__main__.IndependentChecks.test_extreme_valid_dpo_probabilities) ... ok
+test_invalid_lm_probabilities (__main__.IndependentChecks.test_invalid_lm_probabilities) ... ok
+test_lm_cross_entropy_without_companion_helpers (__main__.IndependentChecks.test_lm_cross_entropy_without_companion_helpers) ... ok
+test_lora_non_square_dimension (__main__.IndependentChecks.test_lora_non_square_dimension) ... ok
+test_policy_nonboolean_flags_never_authorize (__main__.IndependentChecks.test_policy_nonboolean_flags_never_authorize) ... ok
+test_quantization_exact_fraction_mse (__main__.IndependentChecks.test_quantization_exact_fraction_mse) ... ok
+test_tv_equals_maximum_subset_probability_gap (__main__.IndependentChecks.test_tv_equals_maximum_subset_probability_gap) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.025s
+
+OK

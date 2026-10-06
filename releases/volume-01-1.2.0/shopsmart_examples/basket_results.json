@@ -1,0 +1,817 @@
+{
+  "case_id": "V1C05-CASE02",
+  "currency": "AUD",
+  "money_unit": "integer cents",
+  "data_status": "wholly synthetic assumed prices/fees/equivalence; not retailer quotes or service offers",
+  "input_contract": "Three approved equivalent abstract lines P1/P2/P3, exactly one purchased pack each. Typed, voice and uploaded-list adapters are proposed, not implemented.",
+  "stores": [
+    "Coles",
+    "Woolworths",
+    "ALDI"
+  ],
+  "products": [
+    "P1",
+    "P2",
+    "P3"
+  ],
+  "price_cents_store_by_product": [
+    [
+      800,
+      1100,
+      1000
+    ],
+    [
+      1000,
+      700,
+      1200
+    ],
+    [
+      900,
+      1000,
+      600
+    ]
+  ],
+  "single_store_fees_cents": [
+    400,
+    700,
+    900
+  ],
+  "mixed_store_fee_formula": "200 cents per visited store + 800 cents hypothetical consolidated courier",
+  "enumerated_assignment_count": 27,
+  "all_assignments": [
+    {
+      "assignment": [
+        "Coles",
+        "Coles",
+        "Coles"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles"
+      ],
+      "goods_cents": 2900,
+      "fees_cents": 400,
+      "total_cents": 3300
+    },
+    {
+      "assignment": [
+        "ALDI",
+        "ALDI",
+        "ALDI"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "ALDI"
+      ],
+      "goods_cents": 2500,
+      "fees_cents": 900,
+      "total_cents": 3400
+    },
+    {
+      "assignment": [
+        "ALDI",
+        "Woolworths",
+        "ALDI"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Woolworths",
+        "ALDI"
+      ],
+      "goods_cents": 2200,
+      "fees_cents": 1200,
+      "total_cents": 3400
+    },
+    {
+      "assignment": [
+        "Coles",
+        "Woolworths",
+        "ALDI"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "Woolworths",
+        "ALDI"
+      ],
+      "goods_cents": 2100,
+      "fees_cents": 1400,
+      "total_cents": 3500
+    },
+    {
+      "assignment": [
+        "Woolworths",
+        "Woolworths",
+        "ALDI"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Woolworths",
+        "ALDI"
+      ],
+      "goods_cents": 2300,
+      "fees_cents": 1200,
+      "total_cents": 3500
+    },
+    {
+      "assignment": [
+        "Coles",
+        "ALDI",
+        "ALDI"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "ALDI"
+      ],
+      "goods_cents": 2400,
+      "fees_cents": 1200,
+      "total_cents": 3600
+    },
+    {
+      "assignment": [
+        "Woolworths",
+        "Woolworths",
+        "Woolworths"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Woolworths"
+      ],
+      "goods_cents": 2900,
+      "fees_cents": 700,
+      "total_cents": 3600
+    },
+    {
+      "assignment": [
+        "Coles",
+        "Coles",
+        "ALDI"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "ALDI"
+      ],
+      "goods_cents": 2500,
+      "fees_cents": 1200,
+      "total_cents": 3700
+    },
+    {
+      "assignment": [
+        "Coles",
+        "Woolworths",
+        "Coles"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "Woolworths"
+      ],
+      "goods_cents": 2500,
+      "fees_cents": 1200,
+      "total_cents": 3700
+    },
+    {
+      "assignment": [
+        "ALDI",
+        "Coles",
+        "ALDI"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "ALDI"
+      ],
+      "goods_cents": 2600,
+      "fees_cents": 1200,
+      "total_cents": 3800
+    },
+    {
+      "assignment": [
+        "Woolworths",
+        "ALDI",
+        "ALDI"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Woolworths",
+        "ALDI"
+      ],
+      "goods_cents": 2600,
+      "fees_cents": 1200,
+      "total_cents": 3800
+    },
+    {
+      "assignment": [
+        "Coles",
+        "Woolworths",
+        "Woolworths"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "Woolworths"
+      ],
+      "goods_cents": 2700,
+      "fees_cents": 1200,
+      "total_cents": 3900
+    },
+    {
+      "assignment": [
+        "Woolworths",
+        "Woolworths",
+        "Coles"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "Woolworths"
+      ],
+      "goods_cents": 2700,
+      "fees_cents": 1200,
+      "total_cents": 3900
+    },
+    {
+      "assignment": [
+        "ALDI",
+        "Woolworths",
+        "Coles"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "Woolworths",
+        "ALDI"
+      ],
+      "goods_cents": 2600,
+      "fees_cents": 1400,
+      "total_cents": 4000
+    },
+    {
+      "assignment": [
+        "ALDI",
+        "Woolworths",
+        "Woolworths"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Woolworths",
+        "ALDI"
+      ],
+      "goods_cents": 2800,
+      "fees_cents": 1200,
+      "total_cents": 4000
+    },
+    {
+      "assignment": [
+        "Coles",
+        "ALDI",
+        "Coles"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "ALDI"
+      ],
+      "goods_cents": 2800,
+      "fees_cents": 1200,
+      "total_cents": 4000
+    },
+    {
+      "assignment": [
+        "ALDI",
+        "ALDI",
+        "Coles"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "ALDI"
+      ],
+      "goods_cents": 2900,
+      "fees_cents": 1200,
+      "total_cents": 4100
+    },
+    {
+      "assignment": [
+        "Woolworths",
+        "Coles",
+        "ALDI"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "Woolworths",
+        "ALDI"
+      ],
+      "goods_cents": 2700,
+      "fees_cents": 1400,
+      "total_cents": 4100
+    },
+    {
+      "assignment": [
+        "ALDI",
+        "Coles",
+        "Coles"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "ALDI"
+      ],
+      "goods_cents": 3000,
+      "fees_cents": 1200,
+      "total_cents": 4200
+    },
+    {
+      "assignment": [
+        "ALDI",
+        "ALDI",
+        "Woolworths"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Woolworths",
+        "ALDI"
+      ],
+      "goods_cents": 3100,
+      "fees_cents": 1200,
+      "total_cents": 4300
+    },
+    {
+      "assignment": [
+        "Coles",
+        "Coles",
+        "Woolworths"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "Woolworths"
+      ],
+      "goods_cents": 3100,
+      "fees_cents": 1200,
+      "total_cents": 4300
+    },
+    {
+      "assignment": [
+        "Woolworths",
+        "Coles",
+        "Coles"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "Woolworths"
+      ],
+      "goods_cents": 3100,
+      "fees_cents": 1200,
+      "total_cents": 4300
+    },
+    {
+      "assignment": [
+        "Coles",
+        "ALDI",
+        "Woolworths"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "Woolworths",
+        "ALDI"
+      ],
+      "goods_cents": 3000,
+      "fees_cents": 1400,
+      "total_cents": 4400
+    },
+    {
+      "assignment": [
+        "Woolworths",
+        "ALDI",
+        "Coles"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "Woolworths",
+        "ALDI"
+      ],
+      "goods_cents": 3000,
+      "fees_cents": 1400,
+      "total_cents": 4400
+    },
+    {
+      "assignment": [
+        "Woolworths",
+        "ALDI",
+        "Woolworths"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Woolworths",
+        "ALDI"
+      ],
+      "goods_cents": 3200,
+      "fees_cents": 1200,
+      "total_cents": 4400
+    },
+    {
+      "assignment": [
+        "Woolworths",
+        "Coles",
+        "Woolworths"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "Woolworths"
+      ],
+      "goods_cents": 3300,
+      "fees_cents": 1200,
+      "total_cents": 4500
+    },
+    {
+      "assignment": [
+        "ALDI",
+        "Coles",
+        "Woolworths"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles",
+        "Woolworths",
+        "ALDI"
+      ],
+      "goods_cents": 3200,
+      "fees_cents": 1400,
+      "total_cents": 4600
+    }
+  ],
+  "single_store_plans": {
+    "Coles": {
+      "assignment": [
+        "Coles",
+        "Coles",
+        "Coles"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Coles"
+      ],
+      "goods_cents": 2900,
+      "fees_cents": 400,
+      "total_cents": 3300
+    },
+    "ALDI": {
+      "assignment": [
+        "ALDI",
+        "ALDI",
+        "ALDI"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "ALDI"
+      ],
+      "goods_cents": 2500,
+      "fees_cents": 900,
+      "total_cents": 3400
+    },
+    "Woolworths": {
+      "assignment": [
+        "Woolworths",
+        "Woolworths",
+        "Woolworths"
+      ],
+      "product_ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "whole_pack_quantities": [
+        1,
+        1,
+        1
+      ],
+      "visited_stores": [
+        "Woolworths"
+      ],
+      "goods_cents": 2900,
+      "fees_cents": 700,
+      "total_cents": 3600
+    }
+  },
+  "greedy_item_price_plan": {
+    "assignment": [
+      "Coles",
+      "Woolworths",
+      "ALDI"
+    ],
+    "product_ids": [
+      "P1",
+      "P2",
+      "P3"
+    ],
+    "whole_pack_quantities": [
+      1,
+      1,
+      1
+    ],
+    "visited_stores": [
+      "Coles",
+      "Woolworths",
+      "ALDI"
+    ],
+    "goods_cents": 2100,
+    "fees_cents": 1400,
+    "total_cents": 3500
+  },
+  "strict_budget_cents": 4000,
+  "feasible_assignment_count": 13,
+  "minimum_total_plan": {
+    "assignment": [
+      "Coles",
+      "Coles",
+      "Coles"
+    ],
+    "product_ids": [
+      "P1",
+      "P2",
+      "P3"
+    ],
+    "whole_pack_quantities": [
+      1,
+      1,
+      1
+    ],
+    "visited_stores": [
+      "Coles"
+    ],
+    "goods_cents": 2900,
+    "fees_cents": 400,
+    "total_cents": 3300
+  },
+  "strict_budget_3300_feasible_count": 0,
+  "scope": "Exact finite allocation arithmetic only. No real stock, supplier/courier integration, ingredient/allergen checking, nutrition calculation, price forecast or purchase is performed."
+}

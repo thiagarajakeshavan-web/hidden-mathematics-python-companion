@@ -1,0 +1,21 @@
+{
+  "companion_version": "0.2.0",
+  "book_edition": "author-review-0.2.0",
+  "python": "3.12.14",
+  "python_implementation": "CPython",
+  "numpy": "2.3.5",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "float": "NumPy float64 unless quantized integers int8",
+  "external_dependencies": [
+    "numpy==2.3.5"
+  ],
+  "bootstrap_rng": "PCG64",
+  "bootstrap_seed": 23,
+  "test_command": "python -W error -m unittest discover -s tests -v",
+  "test_count": 287,
+  "clock_note": "Execution date recorded as 2026-10-06 UTC from task context; no timing benchmark claimed.",
+  "core_tests": 253,
+  "independent_oracle_tests": 34,
+  "case_count": 14
+}

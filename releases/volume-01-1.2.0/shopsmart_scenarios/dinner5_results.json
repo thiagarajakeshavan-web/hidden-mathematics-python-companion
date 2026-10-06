@@ -1,0 +1,289 @@
+{
+  "case_id": "V1C05-CASE04",
+  "meal": "Lentil, tomato and spinach stew with rice, broccoli and carrots",
+  "servings": 5,
+  "profile": "peanut_and_named_tree_nuts",
+  "excluded_allergens": [
+    "peanut",
+    "almond",
+    "Brazil nut",
+    "cashew",
+    "hazelnut",
+    "macadamia",
+    "pecan",
+    "pistachio",
+    "pine nut",
+    "walnut"
+  ],
+  "status": "SYNTHETIC_FEASIBLE",
+  "complete_kit_eligible_in_fixture": true,
+  "under_strict_budget": true,
+  "strict_budget_cents": 4000,
+  "whole_purchase_goods_cents": 2680,
+  "fees": {
+    "delivery_cents": 500,
+    "handling_cents": 100,
+    "other_mandatory_cents": 0
+  },
+  "fees_cents": 600,
+  "payable_cents": 3280,
+  "budget_headroom_cents": 720,
+  "prorated_recipe_ingredient_cost_cents": {
+    "numerator": 18077,
+    "denominator": 14,
+    "decimal": 1291.2142857142858
+  },
+  "prorated_cost_note": "An accounting allocation of used ingredients, excluding fees; not a purchasable basket total.",
+  "purchased_pack_count": 14,
+  "exclusions": [],
+  "kitchen_review_passes_fixture": true,
+  "lines": [
+    {
+      "item_id": "D01",
+      "ingredient": "Rice, dry",
+      "unit": "g",
+      "recipe_quantity": 350,
+      "pack_quantity": 1000,
+      "packs_to_purchase": 1,
+      "purchased_quantity": 1000,
+      "leftover_quantity": 650,
+      "whole_purchase_cents": 250,
+      "prorated_recipe_cost_cents": {
+        "numerator": 175,
+        "denominator": 2
+      },
+      "synthetic_eligibility": "PASS_FIXTURE"
+    },
+    {
+      "item_id": "D02",
+      "ingredient": "Lentils, dry",
+      "unit": "g",
+      "recipe_quantity": 500,
+      "pack_quantity": 500,
+      "packs_to_purchase": 1,
+      "purchased_quantity": 500,
+      "leftover_quantity": 0,
+      "whole_purchase_cents": 240,
+      "prorated_recipe_cost_cents": {
+        "numerator": 240,
+        "denominator": 1
+      },
+      "synthetic_eligibility": "PASS_FIXTURE"
+    },
+    {
+      "item_id": "D03",
+      "ingredient": "Canned chopped tomatoes",
+      "unit": "g",
+      "recipe_quantity": 800,
+      "pack_quantity": 400,
+      "packs_to_purchase": 2,
+      "purchased_quantity": 800,
+      "leftover_quantity": 0,
+      "whole_purchase_cents": 200,
+      "prorated_recipe_cost_cents": {
+        "numerator": 200,
+        "denominator": 1
+      },
+      "synthetic_eligibility": "PASS_FIXTURE"
+    },
+    {
+      "item_id": "D04",
+      "ingredient": "Onions",
+      "unit": "g",
+      "recipe_quantity": 300,
+      "pack_quantity": 1000,
+      "packs_to_purchase": 1,
+      "purchased_quantity": 1000,
+      "leftover_quantity": 700,
+      "whole_purchase_cents": 250,
+      "prorated_recipe_cost_cents": {
+        "numerator": 75,
+        "denominator": 1
+      },
+      "synthetic_eligibility": "PASS_FIXTURE"
+    },
+    {
+      "item_id": "D05",
+      "ingredient": "Carrots",
+      "unit": "g",
+      "recipe_quantity": 400,
+      "pack_quantity": 1000,
+      "packs_to_purchase": 1,
+      "purchased_quantity": 1000,
+      "leftover_quantity": 600,
+      "whole_purchase_cents": 200,
+      "prorated_recipe_cost_cents": {
+        "numerator": 80,
+        "denominator": 1
+      },
+      "synthetic_eligibility": "PASS_FIXTURE"
+    },
+    {
+      "item_id": "D06",
+      "ingredient": "Spinach",
+      "unit": "g",
+      "recipe_quantity": 250,
+      "pack_quantity": 250,
+      "packs_to_purchase": 1,
+      "purchased_quantity": 250,
+      "leftover_quantity": 0,
+      "whole_purchase_cents": 200,
+      "prorated_recipe_cost_cents": {
+        "numerator": 200,
+        "denominator": 1
+      },
+      "synthetic_eligibility": "PASS_FIXTURE"
+    },
+    {
+      "item_id": "D07",
+      "ingredient": "Broccoli",
+      "unit": "g",
+      "recipe_quantity": 500,
+      "pack_quantity": 500,
+      "packs_to_purchase": 1,
+      "purchased_quantity": 500,
+      "leftover_quantity": 0,
+      "whole_purchase_cents": 250,
+      "prorated_recipe_cost_cents": {
+        "numerator": 250,
+        "denominator": 1
+      },
+      "synthetic_eligibility": "PASS_FIXTURE"
+    },
+    {
+      "item_id": "D08",
+      "ingredient": "Garlic",
+      "unit": "g",
+      "recipe_quantity": 20,
+      "pack_quantity": 100,
+      "packs_to_purchase": 1,
+      "purchased_quantity": 100,
+      "leftover_quantity": 80,
+      "whole_purchase_cents": 100,
+      "prorated_recipe_cost_cents": {
+        "numerator": 20,
+        "denominator": 1
+      },
+      "synthetic_eligibility": "PASS_FIXTURE"
+    },
+    {
+      "item_id": "D09",
+      "ingredient": "Lemon",
+      "unit": "count",
+      "recipe_quantity": 1,
+      "pack_quantity": 3,
+      "packs_to_purchase": 1,
+      "purchased_quantity": 3,
+      "leftover_quantity": 2,
+      "whole_purchase_cents": 150,
+      "prorated_recipe_cost_cents": {
+        "numerator": 50,
+        "denominator": 1
+      },
+      "synthetic_eligibility": "PASS_FIXTURE"
+    },
+    {
+      "item_id": "D10",
+      "ingredient": "Cooking oil",
+      "unit": "ml",
+      "recipe_quantity": 30,
+      "pack_quantity": 500,
+      "packs_to_purchase": 1,
+      "purchased_quantity": 500,
+      "leftover_quantity": 470,
+      "whole_purchase_cents": 300,
+      "prorated_recipe_cost_cents": {
+        "numerator": 18,
+        "denominator": 1
+      },
+      "synthetic_eligibility": "PASS_FIXTURE"
+    },
+    {
+      "item_id": "D11",
+      "ingredient": "Ground cumin",
+      "unit": "g",
+      "recipe_quantity": 6,
+      "pack_quantity": 35,
+      "packs_to_purchase": 1,
+      "purchased_quantity": 35,
+      "leftover_quantity": 29,
+      "whole_purchase_cents": 180,
+      "prorated_recipe_cost_cents": {
+        "numerator": 216,
+        "denominator": 7
+      },
+      "synthetic_eligibility": "PASS_FIXTURE"
+    },
+    {
+      "item_id": "D12",
+      "ingredient": "Paprika",
+      "unit": "g",
+      "recipe_quantity": 6,
+      "pack_quantity": 35,
+      "packs_to_purchase": 1,
+      "purchased_quantity": 35,
+      "leftover_quantity": 29,
+      "whole_purchase_cents": 180,
+      "prorated_recipe_cost_cents": {
+        "numerator": 216,
+        "denominator": 7
+      },
+      "synthetic_eligibility": "PASS_FIXTURE"
+    },
+    {
+      "item_id": "D13",
+      "ingredient": "Black pepper",
+      "unit": "g",
+      "recipe_quantity": 2,
+      "pack_quantity": 40,
+      "packs_to_purchase": 1,
+      "purchased_quantity": 40,
+      "leftover_quantity": 38,
+      "whole_purchase_cents": 180,
+      "prorated_recipe_cost_cents": {
+        "numerator": 9,
+        "denominator": 1
+      },
+      "synthetic_eligibility": "PASS_FIXTURE"
+    }
+  ],
+  "pantry_assumptions": [
+    "Drinking water only. Every food ingredient used, including oil and spices, is priced as a whole purchasable pack. Salt is not required or included.",
+    "Cooking equipment, household energy and water charges are not grocery checkout items and are outside this shopping budget."
+  ],
+  "recipe_steps": [
+    "Rinse the lentils and cook in unsalted water according to their pack directions until tender, then drain. Record their actual cooked, drained mass if using the nutrition demonstration. The fixture assumes 1000 g; this is an illustrative measurement, not a validated dry-to-cooked yield.",
+    "Cook 350 g dry rice in water according to the pack directions.",
+    "Peel and chop 300 g onions, 400 g carrots and 20 g garlic. Wash the broccoli and spinach.",
+    "Use 20 ml of the measured oil to soften the onions and carrots in a large pan. Add garlic, 6 g cumin, 6 g paprika and 2 g black pepper; stir briefly.",
+    "Add both 400 g cans of tomatoes and enough water for a stew. Simmer until the carrots are tender. Stir in the cooked lentils and 250 g spinach and heat through.",
+    "Steam the 500 g broccoli until cooked as preferred. Dress with the remaining 10 ml oil and juice from one lemon.",
+    "Divide the rice, lentil stew and broccoli into five portions. The five portions define the teaching calculation; appetites and nutrition needs vary."
+  ],
+  "nutrition": {
+    "scope": "Lentil component only; not whole-meal totals or an adequacy judgment.",
+    "source_url": "https://www.foodstandards.gov.au/science-data/food-nutrient-databases/afcd/search/food/F005177",
+    "source_food_key": "F005177",
+    "assumed_cooked_drained_mass_g": "1000",
+    "servings": 5,
+    "lentil_batch_contribution": {
+      "protein_g": "73.0",
+      "dietary_fibre_g": "41.0",
+      "iron_mg": "16.30",
+      "folate_ug": "140"
+    },
+    "lentil_contribution_per_serving": {
+      "protein_g": "14.6",
+      "dietary_fibre_g": "8.2",
+      "iron_mg": "3.26",
+      "folate_ug": "28"
+    },
+    "whole_meal_nutrient_totals": null,
+    "assumption": "Use the cooked drained weight, not the purchased dry weight. Weigh the actual cooked batch; change this input if its mass differs. Reference values and assumed mass do not verify a real product or recipe."
+  },
+  "actual_product_clearance": false,
+  "real_world_status": "WITHHOLD_ALLERGY_COMPLIANT_RECOMMENDATION_PENDING_CURRENT_PRODUCT_LABELS_CROSS_CONTACT_AND_APPROPRIATE_HUMAN_REVIEW",
+  "scope": "One home-cooked vegan dinner for five, not five days, a restaurant order or a clinically balanced meal plan. All commercial and eligibility inputs are fiction. Peanut and named tree nuts are separate constraints; the phrase nut-free alone is insufficient. UNKNOWN, stale, ambiguous, conflicting or missing relevant evidence is excluded. Cost cannot override a dietary or allergen gate.",
+  "currency": "AUD",
+  "data_status": "Fictional ingredient products, prices, pack sizes, stock and label/cross-contact assessments. No real product is cleared as allergy-safe."
+}

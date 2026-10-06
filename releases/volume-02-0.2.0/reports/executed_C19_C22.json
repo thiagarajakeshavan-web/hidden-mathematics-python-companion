@@ -1,0 +1,182 @@
+{
+  "V2C19-CASE01": {
+    "sft": {
+      "probabilities_before": [
+        0.5,
+        0.5
+      ],
+      "loss_before": 0.6931471805599453,
+      "gradient": [
+        -0.5,
+        0.5
+      ],
+      "logits_after": [
+        0.1,
+        -0.1
+      ],
+      "probabilities_after": [
+        0.549833997312478,
+        0.4501660026875221
+      ],
+      "loss_after": 0.5981388693815918
+    },
+    "dpo": {
+      "log_ratio_delta": 1.0986122886681096,
+      "margin": 0.5493061443340548,
+      "loss": 0.4557463944083262,
+      "log_probability_gradients": [
+        -0.18301270189221935,
+        0.18301270189221935
+      ],
+      "central_difference_gradients": [
+        -0.1830127018820349,
+        0.1830127018820349
+      ],
+      "max_gradient_error": 1.018446438294518e-11
+    },
+    "lora": {
+      "base_output": [
+        4.0,
+        10.0
+      ],
+      "weight_update": [
+        [
+          0.1,
+          -0.1
+        ],
+        [
+          0.2,
+          -0.2
+        ]
+      ],
+      "adapter_output": [
+        0.1,
+        0.2
+      ],
+      "combined_output": [
+        4.1,
+        10.2
+      ],
+      "base_parameter_count": 4,
+      "adapter_parameter_count": 4
+    }
+  },
+  "V2C20-CASE01": {
+    "ranked_authorized_current": [
+      {
+        "id": "D1",
+        "score": 0.9999999999999998,
+        "restriction_review_eligible": false
+      },
+      {
+        "id": "D2",
+        "score": 0.7071067811865475,
+        "restriction_review_eligible": true
+      }
+    ],
+    "restriction_review_candidate_ids": [
+      "D2"
+    ],
+    "withheld_for_unknown_restriction_ids": [
+      "D1"
+    ],
+    "scope": "Lexical cosine; review eligibility is not an allergen-safety guarantee."
+  },
+  "V2C21-CASE01": {
+    "normal": {
+      "status": "ready_for_review",
+      "tool_calls": [
+        "read_catalogue",
+        "read_labels",
+        "calculate_total"
+      ],
+      "tool_call_count": 3,
+      "events": [
+        "quote prepared for human review; terminal state"
+      ],
+      "quote_total_aud": "36.50",
+      "purchase_executed": false
+    },
+    "unknown_cross_contact": {
+      "status": "blocked_unknown_restriction",
+      "tool_calls": [
+        "read_catalogue",
+        "read_labels"
+      ],
+      "tool_call_count": 2,
+      "events": [
+        "blocked: current resolved restriction evidence unavailable"
+      ],
+      "quote_total_aud": null,
+      "purchase_executed": false
+    },
+    "injected_catalogue": {
+      "status": "ready_for_review",
+      "tool_calls": [
+        "read_catalogue",
+        "read_labels",
+        "calculate_total"
+      ],
+      "tool_call_count": 3,
+      "events": [
+        "untrusted catalogue instruction ignored",
+        "quote prepared for human review; terminal state"
+      ],
+      "quote_total_aud": "36.50",
+      "purchase_executed": false
+    },
+    "attempted_purchase": {
+      "status": "denied",
+      "tool_calls": [],
+      "tool_call_count": 0,
+      "events": [
+        "denied: action outside read-only allowlist"
+      ],
+      "quote_total_aud": null,
+      "purchase_executed": false
+    },
+    "exhausted_budget": {
+      "status": "budget_exhausted",
+      "tool_calls": [
+        "read_catalogue",
+        "read_labels"
+      ],
+      "tool_call_count": 2,
+      "events": [
+        "stopped: tool-call budget exhausted"
+      ],
+      "quote_total_aud": null,
+      "purchase_executed": false
+    }
+  },
+  "V2C22-CASE01": {
+    "at_1000": {
+      "selected_id": "P1-a",
+      "price_aud": 12,
+      "quarantined_ids": []
+    },
+    "at_1015": {
+      "selected_id": "P1-b",
+      "price_aud": 10,
+      "quarantined_ids": []
+    },
+    "missing_entity": {
+      "selected_id": null,
+      "price_aud": null,
+      "quarantined_ids": []
+    },
+    "all_stale": {
+      "selected_id": null,
+      "price_aud": null,
+      "quarantined_ids": []
+    },
+    "conflicting_duplicate": {
+      "selected_id": null,
+      "price_aud": null,
+      "quarantined_ids": [
+        "P1-a"
+      ]
+    },
+    "unique_record_count": 3
+  }
+}

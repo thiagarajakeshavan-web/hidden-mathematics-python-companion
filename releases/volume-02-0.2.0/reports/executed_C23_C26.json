@@ -1,0 +1,183 @@
+{
+  "V2C23-CASE01": {
+    "faithfulness": 0.7,
+    "faithfulness_wilson_95": [
+      0.39677814746114537,
+      0.8922087325936989
+    ],
+    "unsupported_detector": {
+      "tp": 2,
+      "fp": 1,
+      "fn": 1,
+      "tn": 6,
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666
+    },
+    "brier": 0.175,
+    "ece_one_bin": 1.1102230246251565e-16,
+    "one_bin_membership": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "one_bin_count": 4,
+    "one_bin_mean_confidence": 0.7500000000000001,
+    "one_bin_accuracy": 0.75,
+    "retrieval_precision": 0.75,
+    "retrieval_recall": 0.6,
+    "paired_improvement": 0.3,
+    "paired_bootstrap_95_percentile_interval": [
+      0.0,
+      0.6
+    ],
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 23,
+    "bootstrap_rng": "NumPy PCG64",
+    "quantile_method": "linear"
+  },
+  "V2C24-CASE01": {
+    "scale": 0.007874015748031496,
+    "integers": [
+      -127,
+      -64,
+      0,
+      64,
+      127
+    ],
+    "reconstructed": [
+      -1.0,
+      -0.5039370078740157,
+      0.0,
+      0.5039370078740157,
+      1.0
+    ],
+    "max_absolute_error": 0.003937007874015741,
+    "mean_squared_error": 6.2000124000247774e-06,
+    "pruned": [
+      0.8,
+      0.0,
+      0.2,
+      0.0
+    ],
+    "pruning_keep_mask": [
+      true,
+      false,
+      true,
+      false
+    ],
+    "sparsity": 0.5,
+    "kl_teacher_student_nats": 0.022730254805422415,
+    "categorical_student_training": {
+      "steps": 20,
+      "learning_rate": 0.5,
+      "kl_before": 0.022730254805422415,
+      "kl_after": 0.0002191047506049197,
+      "student_after": [
+        0.6962321075149233,
+        0.19743647280027046,
+        0.10633141968480639
+      ],
+      "kl_trajectory": [
+        0.022730254805422415,
+        0.015901742412498927,
+        0.011278273436313359,
+        0.008112867365338783,
+        0.005921415305604458,
+        0.004387020674635787,
+        0.003300166371148286,
+        0.0025210055897889744,
+        0.0019553574879699505,
+        0.0015392621831181695,
+        0.0012289374906107094,
+        0.000994182885546327,
+        0.0008140077344839323,
+        0.0006737097194115804,
+        0.0005629078601950086,
+        0.0004742093654701851,
+        0.00040230059286971986,
+        0.0003433237439945929,
+        0.0002944472421783856,
+        0.00025356811028950845,
+        0.0002191047506049197
+      ],
+      "gradient_check": {
+        "analytic": [
+          -0.09999999999999998,
+          0.04999999999999999,
+          0.04999999999999999
+        ],
+        "central_difference": [
+          -0.10000000005491727,
+          0.050000000046540594,
+          0.05000000002572391
+        ],
+        "max_gradient_error": 5.491729293538583e-11
+      }
+    },
+    "dense_fp32_bytes": 4000000,
+    "int8_tensor_bytes_with_scale": 1000004,
+    "weight_storage_ratio": 3.999984000064,
+    "kv_bytes": 50331648,
+    "kv_mib": 48.0
+  },
+  "V2C25-CASE01": {
+    "group_a": {
+      "tpr": 0.8,
+      "fpr": 0.2,
+      "accuracy": 0.8,
+      "size": 20
+    },
+    "group_b": {
+      "tpr": 0.6,
+      "fpr": 0.1,
+      "accuracy": 0.75,
+      "size": 20
+    },
+    "tpr_gap": 0.20000000000000007,
+    "fpr_gap": 0.1,
+    "policy_decisions": {
+      "read_allowed": "allow",
+      "injected_export": "deny",
+      "checkout_unapproved": "deny",
+      "bad_arguments": "deny"
+    },
+    "policy_denial_reasons": {
+      "read_allowed": [],
+      "injected_export": [
+        "action_not_allowlisted",
+        "missing_trusted_authorization",
+        "role_not_permitted",
+        "sensitive_export_or_unknown_status"
+      ],
+      "checkout_unapproved": [
+        "action_not_allowlisted",
+        "missing_trusted_authorization"
+      ],
+      "bad_arguments": [
+        "invalid_arguments"
+      ]
+    },
+    "restriction_evidence_decisions": {
+      "current_resolved": "review_eligible",
+      "missing": "withhold",
+      "stale": "withhold",
+      "conflicting": "withhold",
+      "cross_contact_unresolved": "withhold"
+    },
+    "synthetic_redaction": "Contact [EMAIL] for the synthetic quote.",
+    "warning": "Review eligibility is never an allergen-safety guarantee; this policy is not a prompt-injection benchmark."
+  },
+  "V2C26-CASE01": {
+    "total_variation": 0.2,
+    "availability": 0.997,
+    "allowed_bad_requests": 50.0,
+    "remaining_budget": 20.0,
+    "budget_burn_fraction": 0.6,
+    "mean_concurrency": 4.0,
+    "baseline_total_ms": 110.0,
+    "candidate_total_ms": 70.0,
+    "speedup": 1.5714285714285714,
+    "scope": "Synthetic counts and assumed component times; no running service or GPU benchmark."
+  }
+}

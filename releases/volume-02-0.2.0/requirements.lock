@@ -1,0 +1,4 @@
+# Exact external dependency used for release 0.1.0 testing.
+# Python 3.12.14 is recorded separately in environment.json.
+# This version lock is not a cross-platform, wheel-hash lock.
+numpy==2.3.5

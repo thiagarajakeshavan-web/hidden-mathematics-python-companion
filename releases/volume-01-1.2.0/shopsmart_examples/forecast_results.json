@@ -1,0 +1,99 @@
+{
+  "case_id": "V1C10-CASE02",
+  "currency": "AUD",
+  "money_unit": "cents",
+  "data_status": "fully synthetic price history, scenario prices, fees and promotion probability",
+  "abstract_products": [
+    {
+      "id": "WASH-A",
+      "description": "one fixed synthetic washing-powder pack"
+    },
+    {
+      "id": "CHOC-B",
+      "description": "one fixed synthetic Cadbury-chocolate pack; no real SKU or pack-size fact"
+    }
+  ],
+  "other_goods_cents": 1100,
+  "delivery_cents": 600,
+  "promotion_prices_cents": [
+    600,
+    300
+  ],
+  "ordinary_forecast": {
+    "training_days": [
+      -6.0,
+      -3.0,
+      0.0
+    ],
+    "wash_history_cents": [
+      800,
+      900,
+      1000
+    ],
+    "chocolate_history_cents": [
+      600,
+      600,
+      600
+    ],
+    "wash_intercept_cents": 1000.0,
+    "wash_slope_cents_per_day": 33.33333333333333,
+    "chocolate_intercept_cents": 600.0,
+    "chocolate_slope_cents_per_day": 0.0,
+    "forecast_day": 3,
+    "wash_forecast_cents": 1100.0,
+    "chocolate_forecast_cents": 600.0,
+    "ordinary_future_total_cents": 3400,
+    "note": "Three constructed observations fit a line but cannot validate real forecasting. No future observation is used. The promotion probability and promotion prices come from separate assumptions, not this regression."
+  },
+  "delay_cost_200": {
+    "promotion_probability": 0.6,
+    "ordinary_probability": 0.4,
+    "today_delivered_cents": 3300,
+    "promotion_future_delivered_cents": 2600,
+    "ordinary_future_delivered_cents": 3400,
+    "expected_future_delivered_cents": 2920.0,
+    "declared_delay_cost_cents": 200,
+    "expected_wait_cost_with_delay_cents": 3120.0,
+    "expected_saving_vs_today_cents": 180.0,
+    "need_by_day": 3,
+    "waiting_feasible": true,
+    "waiting_exclusion_reasons": [],
+    "synthetic_decision": "wait",
+    "note": "Risk-neutral expected-cost arithmetic with a declared delay preference and assumed feasibility. A point forecast is not a confirmed promotion; expected savings are not guaranteed savings. The buy-now basket is assumed feasible in this fixture."
+  },
+  "delay_cost_400": {
+    "promotion_probability": 0.6,
+    "ordinary_probability": 0.4,
+    "today_delivered_cents": 3300,
+    "promotion_future_delivered_cents": 2600,
+    "ordinary_future_delivered_cents": 3400,
+    "expected_future_delivered_cents": 2920.0,
+    "declared_delay_cost_cents": 400,
+    "expected_wait_cost_with_delay_cents": 3320.0,
+    "expected_saving_vs_today_cents": -20.0,
+    "need_by_day": 3,
+    "waiting_feasible": true,
+    "waiting_exclusion_reasons": [],
+    "synthetic_decision": "buy_now",
+    "note": "Risk-neutral expected-cost arithmetic with a declared delay preference and assumed feasibility. A point forecast is not a confirmed promotion; expected savings are not guaranteed savings. The buy-now basket is assumed feasible in this fixture."
+  },
+  "need_before_day3": {
+    "promotion_probability": 0.6,
+    "ordinary_probability": 0.4,
+    "today_delivered_cents": 3300,
+    "promotion_future_delivered_cents": 2600,
+    "ordinary_future_delivered_cents": 3400,
+    "expected_future_delivered_cents": 2920.0,
+    "declared_delay_cost_cents": 200,
+    "expected_wait_cost_with_delay_cents": 3120.0,
+    "expected_saving_vs_today_cents": 180.0,
+    "need_by_day": 2,
+    "waiting_feasible": false,
+    "waiting_exclusion_reasons": [
+      "forecast day is after the need-by deadline"
+    ],
+    "synthetic_decision": "buy_now",
+    "note": "Risk-neutral expected-cost arithmetic with a declared delay preference and assumed feasibility. A point forecast is not a confirmed promotion; expected savings are not guaranteed savings. The buy-now basket is assumed feasible in this fixture."
+  },
+  "scope": "Regression arithmetic plus a separate assumed uncertain decision model. This non-food-plus-food basket is not the vegan/vegetarian meal or an allergen/nutrition recommendation. No live price service, confirmed sale or product pipeline is implemented."
+}

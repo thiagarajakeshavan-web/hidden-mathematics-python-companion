@@ -1,0 +1,5 @@
+V1C05-CASE03: wrote shopsmart_scenarios/grocery30_results.json
+V1C10-CASE03: wrote shopsmart_scenarios/timing30_results.json
+V1C05-CASE04: wrote shopsmart_scenarios/dinner5_results.json
+V1C04-CASE02: wrote V1C04/CASE02/results.json
+V1C07-CASE02: wrote V1C07/CASE02/results.json
