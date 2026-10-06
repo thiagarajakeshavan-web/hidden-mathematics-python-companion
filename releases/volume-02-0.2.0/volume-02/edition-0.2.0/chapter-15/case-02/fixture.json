@@ -1,0 +1,22 @@
+{
+  "case_id": "V2C15-CASE02",
+  "data_provenance": "Synthetic prescribed gradients; no model training or performance benchmark.",
+  "inputs": {
+    "gradients": [
+      2.0,
+      -1.0
+    ],
+    "initial_parameter": 0.0,
+    "learning_rate": 0.1,
+    "epsilon": 1e-08,
+    "beta1": 0.9,
+    "beta2": 0.9
+  },
+  "definition": "All states initially zero. AdaGrad sum += g*g. Uncentred RMSProp v=beta2*v+(1-beta2)*g*g; no momentum or bias correction. Adam m=beta1*m+(1-beta1)*g; v as above; mhat=m/(1-beta1**t); vhat=v/(1-beta2**t). All denominators sqrt(state)+epsilon; no decay, regularisation, clipping, AMSGrad or AdamW. Parameter change is signed -eta*numerator/denominator.",
+  "checks": [
+    "independent closed-form first and second updates",
+    "Adam bias correction and sign persistence",
+    "outside-root epsilon fixture",
+    "zero gradients and finite/range validation"
+  ]
+}

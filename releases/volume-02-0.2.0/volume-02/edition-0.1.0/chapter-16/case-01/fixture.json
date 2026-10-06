@@ -1,0 +1,37 @@
+{
+  "case_id": "V2C16-CASE01",
+  "data_provenance": "Synthetic teaching fixture, no real customer, retailer or production data.",
+  "inputs": {
+    "signal": [
+      2.0,
+      3.0,
+      5.0,
+      4.0
+    ],
+    "kernel": [
+      1.0,
+      -1.0
+    ],
+    "conv_stride": 1,
+    "conv_padding": 0,
+    "rnn_x": [
+      1.0,
+      0.0
+    ],
+    "rnn_wx": 0.5,
+    "rnn_wh": 0.5,
+    "rnn_b": 0.0,
+    "rnn_h0": 0.0,
+    "lstm_previous_cell": 0.8,
+    "lstm_forget_gate": 0.75,
+    "lstm_input_gate": 0.25,
+    "lstm_candidate": 0.4,
+    "lstm_output_gate": 0.5
+  },
+  "definition": "CNN example is cross-correlation (no kernel flip), output then ReLU. RNN h_t=tanh(wx*x_t+wh*h_prev+b). LSTM supplied gates are valid gate outputs, not learned from this signal; c=f*c_prev+i*g; h=o*tanh(c). Compute gate logits for f,i,o and atanh(g) optionally.",
+  "checks": [
+    "convolution equals [-1,-2,1]",
+    "cell equals 0.7",
+    "holding forget gate fixed, direct cell carry equals f^10; do not label total gradient"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "faithfulness": 0.7,
+  "faithfulness_wilson_95": [
+    0.39677814746114537,
+    0.8922087325936989
+  ],
+  "unsupported_detector": {
+    "tp": 2,
+    "fp": 1,
+    "fn": 1,
+    "tn": 6,
+    "precision": 0.6666666666666666,
+    "recall": 0.6666666666666666
+  },
+  "brier": 0.175,
+  "ece_one_bin": 1.1102230246251565e-16,
+  "one_bin_membership": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "one_bin_count": 4,
+  "one_bin_mean_confidence": 0.7500000000000001,
+  "one_bin_accuracy": 0.75,
+  "retrieval_precision": 0.75,
+  "retrieval_recall": 0.6,
+  "paired_improvement": 0.3,
+  "paired_bootstrap_95_percentile_interval": [
+    0.0,
+    0.6
+  ],
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 23,
+  "bootstrap_rng": "NumPy PCG64",
+  "quantile_method": "linear"
+}

@@ -1,0 +1,74 @@
+{
+  "adagrad": {
+    "initial_parameter": 0.0,
+    "steps": [
+      {
+        "step": 1,
+        "gradient": 2.0,
+        "sum_squares": 4.0,
+        "denominator": 2.00000001,
+        "parameter_change": -0.0999999995,
+        "parameter": -0.0999999995
+      },
+      {
+        "step": 2,
+        "gradient": -1.0,
+        "sum_squares": 5.0,
+        "denominator": 2.2360679874997897,
+        "parameter_change": 0.0447213593499958,
+        "parameter": -0.05527864015000421
+      }
+    ],
+    "final_parameter": -0.05527864015000421
+  },
+  "rmsprop": {
+    "initial_parameter": 0.0,
+    "steps": [
+      {
+        "step": 1,
+        "gradient": 2.0,
+        "second_moment": 0.3999999999999999,
+        "denominator": 0.6324555420336758,
+        "parameter_change": -0.316227761016838,
+        "parameter": -0.316227761016838
+      },
+      {
+        "step": 2,
+        "gradient": -1.0,
+        "second_moment": 0.4599999999999999,
+        "denominator": 0.6782330083125268,
+        "parameter_change": 0.14744195398098414,
+        "parameter": -0.16878580703585389
+      }
+    ],
+    "final_parameter": -0.16878580703585389
+  },
+  "adam": {
+    "initial_parameter": 0.0,
+    "steps": [
+      {
+        "step": 1,
+        "gradient": 2.0,
+        "first_moment": 0.19999999999999996,
+        "second_moment": 0.3999999999999999,
+        "corrected_first_moment": 2.0,
+        "corrected_second_moment": 4.0,
+        "denominator": 2.00000001,
+        "parameter_change": -0.0999999995,
+        "parameter": -0.0999999995
+      },
+      {
+        "step": 2,
+        "gradient": -1.0,
+        "first_moment": 0.07999999999999999,
+        "second_moment": 0.4599999999999999,
+        "corrected_first_moment": 0.4210526315789474,
+        "corrected_second_moment": 2.421052631578948,
+        "denominator": 1.5559732204309982,
+        "parameter_change": -0.027060403485756498,
+        "parameter": -0.1270604029857565
+      }
+    ],
+    "final_parameter": -0.1270604029857565
+  }
+}

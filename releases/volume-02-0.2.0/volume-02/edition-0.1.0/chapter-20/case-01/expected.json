@@ -1,0 +1,21 @@
+{
+  "ranked_authorized_current": [
+    {
+      "id": "D1",
+      "score": 0.9999999999999998,
+      "restriction_review_eligible": false
+    },
+    {
+      "id": "D2",
+      "score": 0.7071067811865475,
+      "restriction_review_eligible": true
+    }
+  ],
+  "restriction_review_candidate_ids": [
+    "D2"
+  ],
+  "withheld_for_unknown_restriction_ids": [
+    "D1"
+  ],
+  "scope": "Lexical cosine; review eligibility is not an allergen-safety guarantee."
+}

@@ -1,0 +1,26 @@
+{
+  "case_id": "V2C21-CASE01",
+  "data_provenance": "Synthetic teaching fixture, no real customer, retailer or production data.",
+  "inputs": {
+    "task": "prepare hypothetical vegan dinner grocery kit for five under A$40, no purchase",
+    "budget_aud": 40,
+    "synthetic_item_total": 31.5,
+    "synthetic_delivery_fee": 5,
+    "read_tools": [
+      "read_catalogue",
+      "read_labels",
+      "calculate_total"
+    ],
+    "forbidden_action": "purchase",
+    "max_tool_calls": 4,
+    "runs": [
+      "complete current restriction evidence produces reviewed quote at 36.50 and stops without purchase",
+      "unknown peanut cross-contact evidence blocks recommendation",
+      "malicious retrieved instruction to purchase is ignored or rejected; never grants permission",
+      "explicit attempted purchase is denied; no write tool exists",
+      "tool-call budget exhausted terminates bounded run"
+    ],
+    "scope": "deterministic finite-state workflow with mock tools, no LLM or live multi-agent service"
+  },
+  "scope": "deterministic finite-state workflow with mock tools, no LLM or live multi-agent service"
+}

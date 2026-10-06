@@ -1,0 +1,44 @@
+{
+  "case_id": "V2C24-CASE01",
+  "data_provenance": "Synthetic teaching fixture, no real customer, retailer or production data.",
+  "inputs": {
+    "weights": [
+      -1,
+      -0.5,
+      0,
+      0.5,
+      1
+    ],
+    "qmax": 127,
+    "rounding": "nearest ties to even",
+    "pruning_weights": [
+      0.8,
+      -0.03,
+      0.2,
+      0.01
+    ],
+    "pruning_threshold": 0.05,
+    "teacher": [
+      0.7,
+      0.2,
+      0.1
+    ],
+    "student": [
+      0.6,
+      0.25,
+      0.15
+    ],
+    "parameter_count": 1000000,
+    "scale_bytes": 4,
+    "kv": {
+      "layers": 12,
+      "batch": 1,
+      "sequence": 2048,
+      "kv_heads": 8,
+      "head_dimension": 64,
+      "bytes_per_element": 2
+    }
+  },
+  "purpose": "Scalar quantization, pruning, KL and memory arithmetic, no speedup claim",
+  "notes": "Calculate MSE and natural-log KL in companion. Memory ratio excludes activations/runtime/metadata except single scale. KV architecture synthetic standard eight-KV-head attention. Pruning mask does not imply sparse kernel acceleration."
+}

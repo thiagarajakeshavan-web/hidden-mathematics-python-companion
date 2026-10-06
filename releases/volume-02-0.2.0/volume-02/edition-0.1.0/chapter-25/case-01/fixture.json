@@ -1,0 +1,65 @@
+{
+  "case_id": "V2C25-CASE01",
+  "data_provenance": "Synthetic teaching fixture, no real customer, retailer or production data.",
+  "inputs": {
+    "group_a": {
+      "tp": 8,
+      "fn": 2,
+      "fp": 2,
+      "tn": 8
+    },
+    "group_b": {
+      "tp": 6,
+      "fn": 4,
+      "fp": 1,
+      "tn": 9
+    },
+    "policy_cases": [
+      {
+        "id": "read_allowed",
+        "action": "read_catalogue",
+        "trusted_user_authorized": true,
+        "role_permitted": true,
+        "arguments_valid": true,
+        "sensitive_export": false,
+        "expected": "allow"
+      },
+      {
+        "id": "injected_export",
+        "action": "export_profile",
+        "trusted_user_authorized": false,
+        "role_permitted": false,
+        "arguments_valid": true,
+        "sensitive_export": true,
+        "expected": "deny"
+      },
+      {
+        "id": "checkout_unapproved",
+        "action": "checkout",
+        "trusted_user_authorized": false,
+        "role_permitted": true,
+        "arguments_valid": true,
+        "sensitive_export": false,
+        "expected": "deny"
+      },
+      {
+        "id": "bad_arguments",
+        "action": "read_catalogue",
+        "trusted_user_authorized": true,
+        "role_permitted": true,
+        "arguments_valid": false,
+        "sensitive_export": false,
+        "expected": "deny"
+      }
+    ],
+    "allergy_evidence": [
+      "current_resolved",
+      "missing",
+      "stale",
+      "conflicting",
+      "cross_contact_unresolved"
+    ]
+  },
+  "purpose": "Deterministic authority gate, fairness confusion arithmetic, synthetic redaction fixture",
+  "notes": "Sensitive export always denied by this deliberately narrow teaching policy; no real tool executes. Evidence current_resolved still means review eligibility only, never an allergen-safety guarantee. No real personal data. Fairness groups are abstract synthetic cohorts, not demographic or eligibility decisions."
+}

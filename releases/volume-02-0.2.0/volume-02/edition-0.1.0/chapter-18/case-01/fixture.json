@@ -1,0 +1,71 @@
+{
+  "case_id": "V2C18-CASE01",
+  "data_provenance": "Synthetic teaching fixture, no real customer, retailer or production data.",
+  "inputs": {
+    "initial_symbols": [
+      "m",
+      "i",
+      "l",
+      "k",
+      "</w>"
+    ],
+    "ordered_merges": [
+      [
+        "m",
+        "i"
+      ],
+      [
+        "mi",
+        "l"
+      ],
+      [
+        "mil",
+        "k"
+      ],
+      [
+        "milk",
+        "</w>"
+      ]
+    ],
+    "next_token_vocabulary": [
+      "milk",
+      "oats",
+      "rice",
+      "</s>"
+    ],
+    "next_token_counts_after_buy": [
+      3,
+      1,
+      0,
+      0
+    ],
+    "additive_smoothing": 1.0,
+    "evaluation_next_tokens": [
+      "milk",
+      "oats",
+      "rice"
+    ],
+    "synthetic_losses": [
+      [
+        1,
+        3.0
+      ],
+      [
+        4,
+        2.0
+      ],
+      [
+        16,
+        1.5
+      ]
+    ],
+    "synthetic_loss_floor": 1.0
+  },
+  "definition": "Apply explicitly supplied merge ranking to symbols; not a learned production tokenizer. Tiny smoothed conditional count model p=(count+1)/(4+4). Evaluation loss is mean negative natural log for three stated targets, perplexity exp(loss). Synthetic scaling law L(C)=1+2*C^(-0.5) with normalized dimensionless C.",
+  "checks": [
+    "conditional probabilities [.5,.25,.125,.125]",
+    "final symbols ['milk</w>']",
+    "C64 prediction 1.25",
+    "no claims tiny count model is LLM or scaling fit predicts actual spend"
+  ]
+}

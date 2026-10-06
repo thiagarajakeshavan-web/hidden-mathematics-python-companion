@@ -1,0 +1,38 @@
+{
+  "case_id": "V2C22-CASE01",
+  "data_provenance": "Synthetic teaching fixture, no real customer, retailer or production data.",
+  "inputs": {
+    "entity": "synthetic washing powder P1",
+    "decision_time": "2026-10-06T10:00:00Z",
+    "ttl_hours": 24,
+    "records": [
+      {
+        "id": "P1-a",
+        "event_time": "2026-10-05T12:00:00Z",
+        "available_at": "2026-10-05T12:05:00Z",
+        "price_aud": 12
+      },
+      {
+        "id": "P1-b",
+        "event_time": "2026-10-06T09:00:00Z",
+        "available_at": "2026-10-06T10:10:00Z",
+        "price_aud": 10
+      },
+      {
+        "id": "P1-c",
+        "event_time": "2026-10-06T11:00:00Z",
+        "available_at": "2026-10-06T11:01:00Z",
+        "price_aud": 9
+      },
+      {
+        "id": "P1-a",
+        "event_time": "2026-10-05T12:00:00Z",
+        "available_at": "2026-10-05T12:05:00Z",
+        "price_aud": 12
+      }
+    ],
+    "expected_logic": "dedupe identical id; at 10:00 select P1-a (12), exclude not yet available P1-b and future P1-c; at 10:15 select P1-b (10); missing entity remains unknown; at 2026-10-07T12:00 all stale; conflicting duplicate quarantined",
+    "scope": "offline point-in-time join using event_time <= decision_time and available_at <= decision_time plus TTL; no live retailer data"
+  },
+  "scope": "offline point-in-time join using event_time <= decision_time and available_at <= decision_time plus TTL; no live retailer data"
+}

@@ -1,0 +1,77 @@
+{
+  "case_id": "V2C23-CASE01",
+  "data_provenance": "Synthetic teaching fixture, no real customer, retailer or production data.",
+  "inputs": {
+    "supported": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "flagged_unsupported": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "confidence": [
+      0.9,
+      0.8,
+      0.7,
+      0.6
+    ],
+    "correct": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "baseline_success": [
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    "candidate_success": [
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1
+    ],
+    "bootstrap_seed": 23,
+    "bootstrap_replicates": 10000,
+    "retrieved_relevance": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "total_relevant": 5
+  },
+  "purpose": "Offline metric arithmetic, no actual language model or RAGAS run",
+  "notes": "Claim support is synthetic human ground truth, not factual truth. Bootstrap intervals and Wilson computed in executed companion; use seeded paired resampling of requests, not separate arm sampling. ECE one bin is intentionally misleading demonstration, equal mean confidence and accuracy. All outputs reported as arithmetic on synthetic fixtures."
+}

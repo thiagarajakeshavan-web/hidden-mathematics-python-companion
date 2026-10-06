@@ -1,0 +1,49 @@
+{
+  "case_id": "V2C17-CASE01",
+  "data_provenance": "Synthetic teaching fixture, no real customer, retailer or production data.",
+  "inputs": {
+    "Q": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "K": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "V": [
+      [
+        2.0,
+        0.0
+      ],
+      [
+        0.0,
+        4.0
+      ]
+    ],
+    "key_dimension": 2,
+    "position_dimension": 4,
+    "positions": [
+      0,
+      1
+    ]
+  },
+  "definition": "scores=Q K^T/sqrt(2), causal mask allows j<=i, stable row softmax, output=A V. Also unmasked result and sinusoidal positions sin(pos/10000^(2i/d)),cos(pos/10000^(2i/d)).",
+  "checks": [
+    "masked future weight exactly zero",
+    "rows sum one",
+    "causal first output [2,0]",
+    "position zero [0,1,0,1]"
+  ]
+}

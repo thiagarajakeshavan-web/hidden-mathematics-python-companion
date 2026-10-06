@@ -1,0 +1,26 @@
+{
+  "case_id": "V2C15-CASE01",
+  "data_provenance": "Synthetic teaching fixture, no real customer, retailer or production data.",
+  "inputs": {
+    "x": [
+      1.0,
+      2.0
+    ],
+    "w": [
+      0.2,
+      -0.1
+    ],
+    "b": 0.3,
+    "v": 0.4,
+    "c": -0.2,
+    "y": 1.0,
+    "learning_rate": 0.1,
+    "epsilon": 1e-06
+  },
+  "definition": "z=w dot x+b; h=max(0,z); a=v*h+c; p=sigmoid(a); loss=softplus(a)-y*a. Parameter order w0,w1,b,v,c. Compute all gradients on original parameters then simultaneous SGD update.",
+  "checks": [
+    "positive z safely away from ReLU kink",
+    "central difference agreement within 1e-7",
+    "post-step loss lower at this example only"
+  ]
+}

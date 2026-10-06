@@ -1,0 +1,12 @@
+{
+  "total_variation": 0.2,
+  "availability": 0.997,
+  "allowed_bad_requests": 50.0,
+  "remaining_budget": 20.0,
+  "budget_burn_fraction": 0.6,
+  "mean_concurrency": 4.0,
+  "baseline_total_ms": 110.0,
+  "candidate_total_ms": 70.0,
+  "speedup": 1.5714285714285714,
+  "scope": "Synthetic counts and assumed component times; no running service or GPU benchmark."
+}

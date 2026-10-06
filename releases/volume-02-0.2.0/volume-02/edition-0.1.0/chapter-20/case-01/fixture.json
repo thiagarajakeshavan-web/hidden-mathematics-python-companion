@@ -1,0 +1,68 @@
+{
+  "case_id": "V2C20-CASE01",
+  "data_provenance": "Synthetic teaching fixture, no real customer, retailer or production data.",
+  "inputs": {
+    "terms": [
+      "vegan",
+      "dinner",
+      "powder"
+    ],
+    "query": [
+      1,
+      1,
+      0
+    ],
+    "documents": [
+      {
+        "id": "D1",
+        "vector": [
+          1,
+          1,
+          0
+        ],
+        "authorized": true,
+        "current": true,
+        "restriction_evidence": "unknown",
+        "title": "Vegan dinner proposal"
+      },
+      {
+        "id": "D2",
+        "vector": [
+          1,
+          0,
+          0
+        ],
+        "authorized": true,
+        "current": true,
+        "restriction_evidence": "eligible_synthetic",
+        "title": "Synthetic chickpea label"
+      },
+      {
+        "id": "D3",
+        "vector": [
+          0,
+          1,
+          1
+        ],
+        "authorized": true,
+        "current": false,
+        "restriction_evidence": "unknown",
+        "title": "Superseded dinner leaflet"
+      },
+      {
+        "id": "D4",
+        "vector": [
+          1,
+          1,
+          0
+        ],
+        "authorized": false,
+        "current": true,
+        "restriction_evidence": "unknown",
+        "title": "Another tenant private plan"
+      }
+    ],
+    "scope": "lexical term vectors and exact cosine only; retrieval authorization/freshness gates; separate synthetic restriction gate; no pretrained embeddings or generator"
+  },
+  "scope": "lexical term vectors and exact cosine only; retrieval authorization/freshness gates; separate synthetic restriction gate; no pretrained embeddings or generator"
+}

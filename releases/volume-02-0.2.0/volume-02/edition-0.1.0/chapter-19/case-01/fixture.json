@@ -1,0 +1,55 @@
+{
+  "case_id": "V2C19-CASE01",
+  "data_provenance": "Synthetic teaching fixture, no real customer, retailer or production data.",
+  "inputs": {
+    "sft": {
+      "logits": [
+        0.0,
+        0.0
+      ],
+      "preferred_index": 0,
+      "learning_rate": 0.2,
+      "scope": "two-candidate softmax teaching update, not token-level LLM training"
+    },
+    "dpo": {
+      "policy_chosen": 0.6,
+      "policy_rejected": 0.2,
+      "reference_chosen": 0.4,
+      "reference_rejected": 0.4,
+      "beta": 0.5,
+      "scope": "offline pairwise loss and derivatives, no fitted production policy"
+    },
+    "lora": {
+      "W": [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "A": [
+        [
+          1,
+          -1
+        ]
+      ],
+      "B": [
+        [
+          0.1
+        ],
+        [
+          0.2
+        ]
+      ],
+      "scale": 1,
+      "x": [
+        2,
+        1
+      ],
+      "scope": "rank-one arithmetic; this tiny matrix has no parameter saving"
+    }
+  }
+}

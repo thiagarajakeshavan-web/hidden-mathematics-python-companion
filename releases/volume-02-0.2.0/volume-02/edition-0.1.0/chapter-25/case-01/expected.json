@@ -1,0 +1,47 @@
+{
+  "group_a": {
+    "tpr": 0.8,
+    "fpr": 0.2,
+    "accuracy": 0.8,
+    "size": 20
+  },
+  "group_b": {
+    "tpr": 0.6,
+    "fpr": 0.1,
+    "accuracy": 0.75,
+    "size": 20
+  },
+  "tpr_gap": 0.20000000000000007,
+  "fpr_gap": 0.1,
+  "policy_decisions": {
+    "read_allowed": "allow",
+    "injected_export": "deny",
+    "checkout_unapproved": "deny",
+    "bad_arguments": "deny"
+  },
+  "policy_denial_reasons": {
+    "read_allowed": [],
+    "injected_export": [
+      "action_not_allowlisted",
+      "missing_trusted_authorization",
+      "role_not_permitted",
+      "sensitive_export_or_unknown_status"
+    ],
+    "checkout_unapproved": [
+      "action_not_allowlisted",
+      "missing_trusted_authorization"
+    ],
+    "bad_arguments": [
+      "invalid_arguments"
+    ]
+  },
+  "restriction_evidence_decisions": {
+    "current_resolved": "review_eligible",
+    "missing": "withhold",
+    "stale": "withhold",
+    "conflicting": "withhold",
+    "cross_contact_unresolved": "withhold"
+  },
+  "synthetic_redaction": "Contact [EMAIL] for the synthetic quote.",
+  "warning": "Review eligibility is never an allergen-safety guarantee; this policy is not a prompt-injection benchmark."
+}

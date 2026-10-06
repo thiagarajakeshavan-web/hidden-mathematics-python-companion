@@ -1,0 +1,51 @@
+{
+  "case_id": "V2C16-CASE02",
+  "data_provenance": "Synthetic forward-only normalisation arithmetic; no training benchmark.",
+  "inputs": {
+    "batch": [
+      [
+        1.0
+      ],
+      [
+        3.0
+      ]
+    ],
+    "gamma": [
+      2.0
+    ],
+    "beta": [
+      0.5
+    ],
+    "epsilon": 1e-05,
+    "initial_running_mean": [
+      0.0
+    ],
+    "initial_running_variance": [
+      1.0
+    ],
+    "momentum": 0.1,
+    "inference_running_mean": [
+      1.0
+    ],
+    "inference_running_variance": [
+      4.0
+    ],
+    "axis_comparison_batch": [
+      [
+        1.0,
+        3.0
+      ],
+      [
+        5.0,
+        7.0
+      ]
+    ]
+  },
+  "definition": "Input shape N,F. BatchNorm training mean/variance along N, biased ddof=0 forward variance. Running update uses (1-rho)*old+rho*observed, with unbiased ddof=1 variance. Inference explicitly uses separate supplied frozen mean=1 and variance=4, NOT just-updated training state. Epsilon INSIDE sqrt. LayerNorm normalises each row across F using ddof=0, same calculation at training/inference. Learned-affine mechanics represented by supplied gamma,beta; no training/backprop.",
+  "checks": [
+    "manual mean, biased/unbiased variance, affine and running-stat calculations",
+    "inference batch composition independence versus training dependence",
+    "axis comparison against row and column oracles",
+    "constant/single-feature cases and invalid dimensions/variances"
+  ]
+}

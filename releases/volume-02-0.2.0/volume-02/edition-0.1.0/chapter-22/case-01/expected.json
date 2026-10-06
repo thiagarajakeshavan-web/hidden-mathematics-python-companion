@@ -1,0 +1,30 @@
+{
+  "at_1000": {
+    "selected_id": "P1-a",
+    "price_aud": 12,
+    "quarantined_ids": []
+  },
+  "at_1015": {
+    "selected_id": "P1-b",
+    "price_aud": 10,
+    "quarantined_ids": []
+  },
+  "missing_entity": {
+    "selected_id": null,
+    "price_aud": null,
+    "quarantined_ids": []
+  },
+  "all_stale": {
+    "selected_id": null,
+    "price_aud": null,
+    "quarantined_ids": []
+  },
+  "conflicting_duplicate": {
+    "selected_id": null,
+    "price_aud": null,
+    "quarantined_ids": [
+      "P1-a"
+    ]
+  },
+  "unique_record_count": 3
+}

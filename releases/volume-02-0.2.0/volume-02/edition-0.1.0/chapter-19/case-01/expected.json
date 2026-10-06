@@ -1,0 +1,62 @@
+{
+  "sft": {
+    "probabilities_before": [
+      0.5,
+      0.5
+    ],
+    "loss_before": 0.6931471805599453,
+    "gradient": [
+      -0.5,
+      0.5
+    ],
+    "logits_after": [
+      0.1,
+      -0.1
+    ],
+    "probabilities_after": [
+      0.549833997312478,
+      0.4501660026875221
+    ],
+    "loss_after": 0.5981388693815918
+  },
+  "dpo": {
+    "log_ratio_delta": 1.0986122886681096,
+    "margin": 0.5493061443340548,
+    "loss": 0.4557463944083262,
+    "log_probability_gradients": [
+      -0.18301270189221935,
+      0.18301270189221935
+    ],
+    "central_difference_gradients": [
+      -0.1830127018820349,
+      0.1830127018820349
+    ],
+    "max_gradient_error": 1.018446438294518e-11
+  },
+  "lora": {
+    "base_output": [
+      4.0,
+      10.0
+    ],
+    "weight_update": [
+      [
+        0.1,
+        -0.1
+      ],
+      [
+        0.2,
+        -0.2
+      ]
+    ],
+    "adapter_output": [
+      0.1,
+      0.2
+    ],
+    "combined_output": [
+      4.1,
+      10.2
+    ],
+    "base_parameter_count": 4,
+    "adapter_parameter_count": 4
+  }
+}

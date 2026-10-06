@@ -1,0 +1,27 @@
+{
+  "case_id": "V2C26-CASE01",
+  "data_provenance": "Synthetic teaching fixture, no real customer, retailer or production data.",
+  "inputs": {
+    "reference_mix": [
+      0.6,
+      0.3,
+      0.1
+    ],
+    "current_mix": [
+      0.4,
+      0.4,
+      0.2
+    ],
+    "requests": 10000,
+    "bad_requests": 30,
+    "availability_target": 0.995,
+    "arrival_rate_per_second": 20,
+    "mean_service_seconds": 0.2,
+    "single_request_gpu_ms": 80,
+    "cpu_ms": 20,
+    "transfer_ms": 10,
+    "candidate_gpu_ms": 40
+  },
+  "purpose": "Offline drift and reliability arithmetic and synthetic request trace",
+  "notes": "A distribution shift does not establish predictive degradation. Availability from synthetic counts, not measured production uptime. Little's law uses a stable system and matching observation boundary. No actual GPU timing. Companion can add deterministic synthetic latency fixture with explicitly declared percentile convention, never claim live service monitoring."
+}
